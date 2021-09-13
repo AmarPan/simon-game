@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr .2fr;
+}
+
+header {
+    background-color:black;
+    grid-column: span 2;
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: green;
+}
+
+aside {
+    background-color: purple
+}
+
+main {
+    background-color: salmon;
+    grid-column: span 2;
+}
+
+footer {
+    background-color: sienna;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.board {
+    border-radius: 50%;
+    height: 225px;
+    width: 225px;
+    color: white;
+    background-color: black;
+    border-width:25px
+}
+
+#btnPink {
+    border-color:hotpink;
+}
+
+#btnGreen {
+    border-color:limegreen;
+}
+
+#btnBlue {
+    border-color:aqua;
+}
+
+#btnYellow {
+    border-color:yellow;
+}
