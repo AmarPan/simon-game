@@ -17,6 +17,11 @@ header {
     color: white;
 }
 
+header h1{
+    color: hotpink;
+    
+}
+
 section {
     background-color: green;
 }
@@ -59,4 +64,24 @@ footer {
 
 #btnYellow {
     border-color:yellow;
+}
+
+#pink{
+    color: hotpink;
+}
+
+#green{
+    color: limegreen;
+}
+
+#blue{
+    color: aqua;
+}
+
+#yellow{
+    color: yellow;
+}
+
+aside h4 {
+    margin-left: 20px;
 }
