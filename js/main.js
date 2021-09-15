@@ -1,7 +1,8 @@
-let compChoices = ["pink","green"];
+let compChoices = ["pink","yellow"];
 let playerChoices = [];
 let playerTurn = false;
 let pushStatus = false;
+let wrongAttempts = 0;
 
 btnPink.addEventListener("click", clickPink);
 
@@ -11,7 +12,7 @@ btnBlue.addEventListener("click", clickBlue);
 
 btnYellow.addEventListener("click", clickYellow);
 
-btnTurn.addEventListener("click", changeTurn)
+btnNext.addEventListener("click", nextLevel)
 
 btnCheck.addEventListener("click",checkAnswer)
 
@@ -20,17 +21,25 @@ function clickPink(){
     setTimeout(function(){
         document.getElementById("btnPink").style.backgroundColor = "black";
     },300);
-    if(playerTurn && pushStatus){
+    if(playerTurn){ //&& pushStatus){
         playerChoices.push("pink");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
-    }else if(playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
+        console.log("playerChoices:",playerChoices)
+        let node = document.querySelector("ol");
+        let sub = document.createElement("li");
+        sub.innerHTML = "pink"
+        node.appendChild(sub);
+        //let textnode = document.createTextNode("pink\n");
+        //node.appendChild(textnode);
+        //document.querySelector("ol").appendChild(node);
+        //listEl.appendChild("pink");
+    // }else if(playerTurn && !pushStatus){
+    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
         compChoices.push("pink");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }else if(!playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }
+        console.log("compChoices:",compChoices)
+    }//else if(!playerTurn && !pushStatus){
+     //   console.log("compChoices:",compChoices)
+    //}
 }
 
 function clickGreen(){
@@ -38,17 +47,21 @@ function clickGreen(){
     setTimeout(function(){
         document.getElementById("btnGreen").style.backgroundColor = "black";
     },300);
-    if(playerTurn && pushStatus){
+    if(playerTurn){ //&& pushStatus){
         playerChoices.push("green");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
-    }else if(playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
+        console.log("playerChoices:",playerChoices)
+        let node = document.querySelector("ol");
+        let sub = document.createElement("li");
+        sub.innerHTML = "green"
+        node.appendChild(sub);
+    // }else if(playerTurn && !pushStatus){
+    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
         compChoices.push("green");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }else if(!playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }
+        console.log("compChoices:",compChoices)
+    }//else if(!playerTurn && !pushStatus){
+      //  console.log("compChoices:",compChoices)
+    //}
 }
 
 function clickBlue(){
@@ -56,17 +69,21 @@ function clickBlue(){
     setTimeout(function(){
         document.getElementById("btnBlue").style.backgroundColor = "black";
     },300);
-    if(playerTurn && pushStatus){
+    if(playerTurn){ //&& pushStatus){
         playerChoices.push("blue");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
-    }else if(playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
+        console.log("playerChoices:",playerChoices)
+        let node = document.querySelector("ol");
+        let sub = document.createElement("li");
+        sub.innerHTML = "blue"
+        node.appendChild(sub);
+    // }else if(playerTurn && !pushStatus){
+    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
         compChoices.push("blue");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }else if(!playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }
+        console.log("compChoices:",compChoices)
+    }//else if(!playerTurn && !pushStatus){
+        //console.log("compChoices:",compChoices)
+    //}
 }
 
 function clickYellow(){
@@ -74,17 +91,21 @@ function clickYellow(){
     setTimeout(function(){
         document.getElementById("btnYellow").style.backgroundColor = "black";
     },300);
-    if(playerTurn && pushStatus){
+    if(playerTurn){ //&& pushStatus){
         playerChoices.push("yellow");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
-    }else if(playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
+        console.log("playerChoices:",playerChoices)
+        let node = document.querySelector("ol");
+        let sub = document.createElement("li");
+        sub.innerHTML = "yellow"
+        node.appendChild(sub);
+    // }else if(playerTurn && !pushStatus){
+    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
         compChoices.push("yellow");
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }else if(!playerTurn && !pushStatus){
-        console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"compChoices:",compChoices)
-    }
+        console.log("compChoices:",compChoices)
+    }//else if(!playerTurn && !pushStatus){
+       // console.log("compChoices:",compChoices)
+    //}
 }
 
 function genRandColor(){
@@ -106,6 +127,8 @@ function addCompChoice(){
         }else{
             clickYellow();
         }
+        playerTurn = true;
+        console.log("playerTurn:",playerTurn);
 }
 
 function addPlayerChoice(){
@@ -129,7 +152,7 @@ function compTurn(){
     let delay = 1500;
     for(let i = 0; i < compChoices.length;i++){
         if(compChoices[i] === "pink"){
-            console.log("pushStatus:",pushStatus)
+            //console.log("pushStatus:",pushStatus)
             setTimeout(clickPink,delay)
         }
         else if(compChoices[i] === "green"){
@@ -147,22 +170,36 @@ function compTurn(){
     //delay = delay + 750;
     setTimeout(addCompChoice,delay);
 }
+    
 
 function checkAnswer(){
-    for(let i = 0; i < compChoices.length;i++){
+    for(let i = 0; i < compChoices.length; i++){
         if(compChoices.length !== playerChoices.length){
+            console.log("Lengths of compChoices and playerChoices don't match")
             document.querySelector("#status").innerHTML = "Wrong answer, try again!";
             break;
-        }else if(compChoices[i] === playerChoices[i]){
-            console.log("Correct match at Index:",i);
-        }
-        else{
+        }else if(compChoices[i] !== playerChoices[i]){
             console.log("Wrong match at Index:",i);
             document.querySelector("#status").innerHTML = "Wrong answer, try again!";
             break;
         }
+        else if(i === compChoices.length - 1 && compChoices[i] === playerChoices[i]){
+            console.log("Correct!");
+            document.querySelector("#status").innerHTML = "Correct! Nice job! Click 'Next Level' to move on";
+        }
     }
-    document.querySelector("#status").innerHTML = "Correct! Nice job! Click 'Next Level' to move on";
+    //document.querySelector("#status").innerHTML = "Correct! Nice job! Click 'Next Level' to move on";
+}
+
+function nextLevel(){
+    pushStatus = false;
+    changeTurn()
+    compTurn()
+    //changeTurn()
+}
+
+function tryAgain(){
+    playerChoices = []
 }
 
 init();
