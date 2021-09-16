@@ -5,6 +5,7 @@ let pushStatus = false;
 let livesLeft = 3;
 let test = ["monks"]
 let test2 = 3;
+let wrongAnswer = false;
 
 btnTry.addEventListener("click",tryAgain)
 
@@ -103,7 +104,11 @@ function addCompChoice(compArr, playerArr){
     
 }
 
+// DONE
 function init(compArr, playerArr){
+    livesLeft = 3;
+    document.querySelector("#game-over").innerHTML = "";
+    document.querySelector("#left").innerHTML = livesLeft;
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
 
@@ -133,6 +138,7 @@ function changeTurn(){
     console.log("playerTurn:",playerTurn);
 }
 
+// DONE
 function changeTurnStatus(status){
     if(status === 0){
         document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
@@ -184,20 +190,39 @@ function compTurn(compArr, playerArr){
 
 function checkAnswer(){
     for(let i = 0; i < compChoices.length; i++){
-        if(compChoices.length !== playerChoices.length){
-            console.log("Lengths of compChoices and playerChoices don't match")
-            document.querySelector("#status").innerHTML = "Wrong answer! Click 'try again' to use another life";
-            break;
-        }else if(compChoices[i] !== playerChoices[i]){
+        // if(compChoices.length !== playerChoices.length ){
+        //     console.log("Lengths of compChoices and playerChoices don't match")
+        //     document.querySelector("#status").innerHTML = "Wrong answer! Click 'try again' to use another life";
+        //     wrongAnswer = true;
+        //     if(wrongAnswer = true && livesLeft === 0){
+        //         let gameOver = document.querySelector("#game-over")
+        //         gameOver.innerHTML = "GAME OVER"
+        //         gameOver.style.color = "red";    
+        //     }
+        //     break;
+        if(compChoices[i] !== playerChoices[i] || compChoices.length !== playerChoices.length){
             console.log("Wrong match at Index:",i);
-            document.querySelector("#status").innerHTML = "Wrong answer! Click 'try again' to use another life";
+            document.querySelector("#status").style.color = "red";
+            document.querySelector("#status").innerHTML = "Wrong answer! Click 'Try Again' to use another life.";
+            wrongAnswer = true;
+            if(wrongAnswer = true && livesLeft === 0){
+                document.querySelector("#status").style.color = "red";
+                document.querySelector("#status").innerHTML = "Wrong! No lives remaining.<br>GAME OVER!"
+                // let gameOver = document.querySelector("#game-over")
+                // gameOver.innerHTML = "GAME OVER"
+                // gameOver.style.color = "red";  
+                // document.querySelectorAll(".over").classList = "disabled"  
+            }
             break;
         }
-        else if(i === compChoices.length - 1 && compChoices[i] === playerChoices[i]){
+        else{
             console.log("Correct!");
-            document.querySelector("#status").innerHTML = "Correct! Nice job! Click 'Next Level' to move on";
+            document.querySelector("#status").style.color = "limegreen";
+            document.querySelector("#status").innerHTML = "Correct! Click 'Next Level' to move on.";
+            wrongAnswer = false;
         }
     }
+    
     //document.querySelector("#status").innerHTML = "Correct! Nice job! Click 'Next Level' to move on";
 }
 
@@ -221,14 +246,18 @@ function nextLevel(compArr, playerArr){
 
 function tryAgain(){
     livesLeft = livesLeft - 1;
-    document.querySelector("#left").innerHTML = livesLeft;
-    clearStatus();
-    playerChoices = []
-    console.log("playerChoice:",playerChoices)
-    document.querySelector("ol").remove()
-    let li = document.createElement("ol");
-    let aside = document.querySelector("#selectionParent");
-    aside.appendChild(li);
+    if (livesLeft > -1){
+        document.querySelector("#left").innerHTML = livesLeft;
+        clearStatus();
+        playerChoices = []
+        console.log("playerChoice:",playerChoices)
+        document.querySelector("ol").remove()
+        let li = document.createElement("ol");
+        let aside = document.querySelector("#selectionParent");
+        aside.appendChild(li);
+    }
+    
+    
 }
 
 function removeTest(){
