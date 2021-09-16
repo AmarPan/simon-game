@@ -40,21 +40,17 @@ function clickColor(shade, btnName, color, compArr, playerArr){
     },300);
     if(playerTurn){
         playerArr.push(shade);
-        console.log("playerChoices:",playerChoices)
         let ol = document.querySelector("ol");
         let li = document.createElement("li");
         li.innerHTML = color;
         ol.appendChild(li);
     }else if(!playerTurn && pushStatus){
         compArr.push(shade);
-        console.log("compChoices:",compChoices)
     }
 }
 
 function genRandColor(){
-    //let colors = ["hotpink", "limegreen", "aqua", "yellow"];
     let rand = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
-    //console.log("Rand:",rand, colors[rand]);
     console.log("rand:",rand)
     return rand;
 }
@@ -77,10 +73,6 @@ function addCompChoice(){
     turn.textContent = "PLAYER'S TURN"
     turn.style.color = "limegreen"
     
-}
-
-function addPlayerChoice(){
-
 }
 
 function init(){
