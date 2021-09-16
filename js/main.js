@@ -6,13 +6,24 @@ let livesLeft = 3;
 
 btnTry.addEventListener("click",tryAgain)
 
-btnPink.addEventListener("click", clickPink);
+btnPink.addEventListener("click", function(){
+    clickColor("hotpink", "btnPink", "pink")
+});
 
-btnGreen.addEventListener("click", clickGreen);
+//btnGreen.addEventListener("click", clickGreen);
+btnGreen.addEventListener("click", function(){
+    clickColor("limegreen", "btnGreen", "green")
+});
 
-btnBlue.addEventListener("click", clickBlue);
+//btnBlue.addEventListener("click", clickBlue);
+btnBlue.addEventListener("click", function(){
+    clickColor("aqua", "btnBlue", "blue")
+});
 
-btnYellow.addEventListener("click", clickYellow);
+//btnYellow.addEventListener("click", clickYellow);
+btnYellow.addEventListener("click", function(){
+    clickColor("yellow", "btnYellow", "yellow")
+});
 
 btnNext.addEventListener("click", nextLevel);
 
@@ -20,116 +31,127 @@ btnStart.addEventListener("click",init);
 
 btnCheck.addEventListener("click",checkAnswer);
 
-function clickPink(){
-    document.getElementById("btnPink").style.backgroundColor = "hotpink";
+function clickColor(shade, btnName, color){
+    document.getElementById(btnName).style.backgroundColor = shade;
     setTimeout(function(){
-        document.getElementById("btnPink").style.backgroundColor = "black";
+        document.getElementById(btnName).style.backgroundColor = "black";
     },300);
-    if(playerTurn){ //&& pushStatus){
-        playerChoices.push("pink");
+    if(playerTurn){
+        playerChoices.push(shade);
         console.log("playerChoices:",playerChoices)
         let ol = document.querySelector("ol");
         let li = document.createElement("li");
-        li.innerHTML = "pink"
+        li.innerHTML = color;
         ol.appendChild(li);
-        //let textnode = document.createTextNode("pink\n");
-        //node.appendChild(textnode);
-        //document.querySelector("ol").appendChild(node);
-        //listEl.appendChild("pink");
-    // }else if(playerTurn && !pushStatus){
-    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
-        compChoices.push("pink");
+        compChoices.push(shade);
         console.log("compChoices:",compChoices)
-    }//else if(!playerTurn && !pushStatus){
-     //   console.log("compChoices:",compChoices)
-    //}
+    }
 }
 
-function clickGreen(){
-    document.getElementById("btnGreen").style.backgroundColor = "limegreen";
-    setTimeout(function(){
-        document.getElementById("btnGreen").style.backgroundColor = "black";
-    },300);
-    if(playerTurn){ //&& pushStatus){
-        playerChoices.push("green");
-        console.log("playerChoices:",playerChoices)
-        let ol = document.querySelector("ol");
-        let li = document.createElement("li");
-        li.innerHTML = "green"
-        ol.appendChild(li);
-    // }else if(playerTurn && !pushStatus){
-    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
-    }else if(!playerTurn && pushStatus){
-        compChoices.push("green");
-        console.log("compChoices:",compChoices)
-    }//else if(!playerTurn && !pushStatus){
-      //  console.log("compChoices:",compChoices)
-    //}
-}
+// function clickPink(){
+//     document.getElementById("btnPink").style.backgroundColor = "pink";
+//     setTimeout(function(){
+//         document.getElementById("btnPink").style.backgroundColor = "black";
+//     },300);
+//     if(playerTurn){
+//         playerChoices.push("pink");
+//         console.log("playerChoices:",playerChoices)
+//         let ol = document.querySelector("ol");
+//         let li = document.createElement("li");
+//         li.innerHTML = "pink"
+//         ol.appendChild(li);
+//     }else if(!playerTurn && pushStatus){
+//         compChoices.push("pink");
+//         console.log("compChoices:",compChoices)
+//     }
+// }
 
-function clickBlue(){
-    document.getElementById("btnBlue").style.backgroundColor = "aqua";
-    setTimeout(function(){
-        document.getElementById("btnBlue").style.backgroundColor = "black";
-    },300);
-    if(playerTurn){ //&& pushStatus){
-        playerChoices.push("blue");
-        console.log("playerChoices:",playerChoices)
-        let ol = document.querySelector("ol");
-        let li = document.createElement("li");
-        li.innerHTML = "blue"
-        ol.appendChild(li);
-    // }else if(playerTurn && !pushStatus){
-    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
-    }else if(!playerTurn && pushStatus){
-        compChoices.push("blue");
-        console.log("compChoices:",compChoices)
-    }//else if(!playerTurn && !pushStatus){
-        //console.log("compChoices:",compChoices)
-    //}
-}
+// function clickGreen(){
+//     document.getElementById("btnGreen").style.backgroundColor = "limegreen";
+//     setTimeout(function(){
+//         document.getElementById("btnGreen").style.backgroundColor = "black";
+//     },300);
+//     if(playerTurn){ //&& pushStatus){
+//         playerChoices.push("green");
+//         console.log("playerChoices:",playerChoices)
+//         let ol = document.querySelector("ol");
+//         let li = document.createElement("li");
+//         li.innerHTML = "green"
+//         ol.appendChild(li);
+//     // }else if(playerTurn && !pushStatus){
+//     //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
+//     }else if(!playerTurn && pushStatus){
+//         compChoices.push("green");
+//         console.log("compChoices:",compChoices)
+//     }//else if(!playerTurn && !pushStatus){
+//       //  console.log("compChoices:",compChoices)
+//     //}
+// }
 
-function clickYellow(){
-    document.getElementById("btnYellow").style.backgroundColor = "yellow";
-    setTimeout(function(){
-        document.getElementById("btnYellow").style.backgroundColor = "black";
-    },300);
-    if(playerTurn){ //&& pushStatus){
-        playerChoices.push("yellow");
-        console.log("playerChoices:",playerChoices)
-        let ol = document.querySelector("ol");
-        let li = document.createElement("li");
-        li.innerHTML = "yellow"
-        ol.appendChild(li);
-    // }else if(playerTurn && !pushStatus){
-    //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
-    }else if(!playerTurn && pushStatus){
-        compChoices.push("yellow");
-        console.log("compChoices:",compChoices)
-    }//else if(!playerTurn && !pushStatus){
-       // console.log("compChoices:",compChoices)
-    //}
-}
+// function clickBlue(){
+//     document.getElementById("btnBlue").style.backgroundColor = "aqua";
+//     setTimeout(function(){
+//         document.getElementById("btnBlue").style.backgroundColor = "black";
+//     },300);
+//     if(playerTurn){ //&& pushStatus){
+//         playerChoices.push("blue");
+//         console.log("playerChoices:",playerChoices)
+//         let ol = document.querySelector("ol");
+//         let li = document.createElement("li");
+//         li.innerHTML = "blue"
+//         ol.appendChild(li);
+//     // }else if(playerTurn && !pushStatus){
+//     //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
+//     }else if(!playerTurn && pushStatus){
+//         compChoices.push("blue");
+//         console.log("compChoices:",compChoices)
+//     }//else if(!playerTurn && !pushStatus){
+//         //console.log("compChoices:",compChoices)
+//     //}
+// }
+
+// function clickYellow(){
+//     document.getElementById("btnYellow").style.backgroundColor = "yellow";
+//     setTimeout(function(){
+//         document.getElementById("btnYellow").style.backgroundColor = "black";
+//     },300);
+//     if(playerTurn){ //&& pushStatus){
+//         playerChoices.push("yellow");
+//         console.log("playerChoices:",playerChoices)
+//         let ol = document.querySelector("ol");
+//         let li = document.createElement("li");
+//         li.innerHTML = "yellow"
+//         ol.appendChild(li);
+//     // }else if(playerTurn && !pushStatus){
+//     //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
+//     }else if(!playerTurn && pushStatus){
+//         compChoices.push("yellow");
+//         console.log("compChoices:",compChoices)
+//     }//else if(!playerTurn && !pushStatus){
+//        // console.log("compChoices:",compChoices)
+//     //}
+// }
 
 function genRandColor(){
-    let colors = ["pink", "green", "blue", "yellow"];
+    //let colors = ["hotpink", "limegreen", "aqua", "yellow"];
     let rand = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
     //console.log("Rand:",rand, colors[rand]);
-    return colors[rand];
+    console.log("rand:",rand)
+    return rand;
 }
 
 function addCompChoice(){
     let next = genRandColor();
     pushStatus = true;
-        if(next === "pink"){
-            clickPink();
-        }else if(next === "green"){
-            clickGreen();
-        }else if(next === "blue"){
-            clickBlue();
+        if(next === 0){
+            clickColor("hotpink", "btnPink", "pink");
+        }else if(next === 1){
+            clickColor("limegreen", "btnGreen", "green");
+        }else if(next === 2){
+            clickColor("aqua", "btnBlue", "blue");
         }else{
-            clickYellow();
+            clickColor("yellow", "btnYellow", "yellow");
         }
     playerTurn = true;
     console.log("playerTurn:",playerTurn);
@@ -145,6 +167,7 @@ function addPlayerChoice(){
 
 function init(){
     compChoices = [];
+    playerChoices = [];
     compTurn();
 }
 
@@ -162,17 +185,25 @@ function compTurn(){
     document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
     document.querySelector("#turn").style.color = "red";
     for(let i = 0; i < compChoices.length;i++){
-        if(compChoices[i] === "pink"){
+        if(compChoices[i] === "hotpink"){
             //console.log("pushStatus:",pushStatus)
-            setTimeout(clickPink,delay)
+            setTimeout(function(){
+                clickColor("hotpink","btnPink", "pink")
+            },delay)
         }
-        else if(compChoices[i] === "green"){
-            setTimeout(clickGreen,delay)
+        else if(compChoices[i] === "limegreen"){
+            setTimeout(function(){
+                clickColor("limegreen","btnGreen", "green")
+            },delay)
         }
-        else if(compChoices[i] === "blue"){
-            setTimeout(clickBlue,delay)
+        else if(compChoices[i] === "aqua"){
+            setTimeout(function(){
+                clickColor("aqua","btnBlue", "blue")
+            },delay)
         }else{
-            setTimeout(clickYellow,delay)
+            setTimeout(function(){
+                clickColor("yellow","btnYellow", "yellow")
+            },delay)
         }
         //console.log("Delay:",delay);
         delay = delay + 750;
