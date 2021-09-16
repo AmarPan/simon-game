@@ -94,10 +94,12 @@ function addCompChoice(compArr, playerArr){
     playerTurn = true;
 
     console.log("playerTurn:",playerTurn);
+    
+    changeTurnStatus(1);
 
-    let turn = document.querySelector("#turn");
-    turn.textContent = "PLAYER'S TURN"
-    turn.style.color = "limegreen"
+    // let turn = document.querySelector("#turn");
+    // turn.textContent = "PLAYER'S TURN"
+    // turn.style.color = "limegreen"
     
 }
 
@@ -120,23 +122,33 @@ function init(compArr, playerArr){
 
 }
 
+// DONE
 function clearArray(playerArr){
     playerArr.length = 0;
 }
 
+// DONE
 function changeTurn(){
     playerTurn = !playerTurn;
     console.log("playerTurn:",playerTurn);
 }
 
-// compChoices.forEach(function(color){
-//     console.log("Color",color)
-// })
+function changeTurnStatus(status){
+    if(status === 0){
+        document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
+        document.querySelector("#turn").style.color = "red";
+    }else if(status === 1){
+        document.querySelector("#turn").innerHTML = "PLAYER'S TURN"
+        document.querySelector("#turn").style.color = "limegreen";
+    }
+}
+
 
 function compTurn(compArr, playerArr){
     let delay = 1500;
-    document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
-    document.querySelector("#turn").style.color = "red";
+    changeTurnStatus(0);
+    //document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
+   // document.querySelector("#turn").style.color = "red";
     let temp = compArr;
     for(let i = 0; i < compArr.length; i++){
         if(compArr[i] === "hotpink"){
