@@ -105,12 +105,14 @@ function init(compArr, playerArr){
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
 
-    compArr.length = 0;
+    clearArray(compArr);
+    //compArr.length = 0;
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
 
-    playerArr.length = 0;
+    clearArray(playerArr);
+    //playerArr.length = 0;
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
@@ -118,14 +120,9 @@ function init(compArr, playerArr){
 
 }
 
-function clearPlayerChoices(playerArr){
+function clearArray(playerArr){
     playerArr.length = 0;
 }
-
-console.log("Test:",test);
-clearPlayerChoices(test);
-console.log("Test:",test)
-
 
 function changeTurn(){
     playerTurn = !playerTurn;
