@@ -60,22 +60,24 @@ function clickColor(shade, btnName, color, compArr, playerArr){
 
 // DONE
 function genRandColor(){
-    let rand = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
-    console.log("rand:",rand)
-    return rand;
+    let rand1 = Math.random() * (3 - 0 + 1) + 0;
+    console.log("rand1:",rand1)
+    let rand2 = Math.floor(rand1)
+    console.log("rand2:",rand2)
+    return rand2;
 }
 
-function addCompChoice(){
+function addCompChoice(compArr, playerArr){
     let next = genRandColor();
     pushStatus = true;
         if(next === 0){
-            clickColor("hotpink", "btnPink", "pink", compChoices, playerChoices);
+            clickColor("hotpink", "btnPink", "pink", compArr, playerArr);
         }else if(next === 1){
-            clickColor("limegreen", "btnGreen", "green", compChoices, playerChoices);
+            clickColor("limegreen", "btnGreen", "green", compArr, playerArr);
         }else if(next === 2){
-            clickColor("aqua", "btnBlue", "blue", compChoices, playerChoices);
+            clickColor("aqua", "btnBlue", "blue", compArr, playerArr);
         }else{
-            clickColor("yellow", "btnYellow", "yellow", compChoices, playerChoices);
+            clickColor("yellow", "btnYellow", "yellow", compArr, playerArr);
         }
     playerTurn = true;
     console.log("playerTurn:",playerTurn);
@@ -136,7 +138,9 @@ function compTurn(){
     }
     //pushStatus = true;
     //delay = delay + 750;
-    setTimeout(addCompChoice,delay);
+    setTimeout(function(){
+        addCompChoice(compChoices, playerChoices)
+    },delay);
 }
     
 
@@ -162,7 +166,7 @@ function checkAnswer(){
 function nextLevel(){
     clearStatus();
     playerChoices = []
-    console.log(playerChoices);
+    console.log("playerChoices:",playerChoices);
     let turn = document.querySelector("#turn");
     turn.textContent = "COMPUTER'S TURN"
     turn.style.color = "red"
