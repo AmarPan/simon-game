@@ -39,13 +39,21 @@ function clickColor(shade, btnName, color, compArr, playerArr){
         document.getElementById(btnName).style.backgroundColor = "black";
     },300);
     if(playerTurn){
+        console.log("compChoices:",compChoices);
+        console.log("playerChoices:",playerChoices);
         playerArr.push(shade);
+        console.log("compChoices:",compChoices);
+        console.log("playerChoices:",playerChoices);
         let ol = document.querySelector("ol");
         let li = document.createElement("li");
         li.innerHTML = color;
         ol.appendChild(li);
     }else if(!playerTurn && pushStatus){
+        console.log("compChoices:",compChoices);
+        console.log("playerChoices:",playerChoices);
         compArr.push(shade);
+        console.log("compChoices:",compChoices);
+        console.log("playerChoices:",playerChoices);
     }
 }
 
