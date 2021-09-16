@@ -3,7 +3,7 @@ let playerChoices = [];
 let playerTurn = false;
 let pushStatus = false;
 let livesLeft = 3;
-let test = 1;
+let test = ["monks"]
 let test2 = 3;
 
 btnTry.addEventListener("click",tryAgain)
@@ -65,17 +65,18 @@ function clickColor(shade, btnName, color, compArr, playerArr){
 
 // DONE
 function genRandColor(){
-    let rand1 = Math.random() * (3 - 0 + 1) + 0;
+    let rand = Math.random() * (3 - 0 + 1) + 0;
 
-    console.log("rand1:",rand1)
+    console.log("rand1:",rand)
 
-    let rand2 = Math.floor(rand1)
+    let randRound = Math.floor(rand)
 
-    console.log("rand2:",rand2)
+    console.log("rand2:",randRound)
 
-    return rand2;
+    return randRound;
 }
 
+// DONE
 function addCompChoice(compArr, playerArr){
     let next = genRandColor();
     pushStatus = true;
@@ -102,18 +103,27 @@ function init(compArr, playerArr){
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
 
-    compArr = [];
+    compArr.length = 0;
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
 
-    playerArr = [];
+    playerArr.length = 0;
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
     compTurn();
 
 }
+
+function clearPlayerChoices(playerArr){
+    playerArr.length = 0;
+}
+
+console.log("Test:",test);
+clearPlayerChoices(test);
+console.log("Test:",test)
+
 
 function changeTurn(){
     playerTurn = !playerTurn;
