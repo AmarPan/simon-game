@@ -33,6 +33,7 @@ btnStart.addEventListener("click",init);
 
 btnCheck.addEventListener("click",checkAnswer);
 
+// DONE
 function clickColor(shade, btnName, color, compArr, playerArr){
     document.getElementById(btnName).style.backgroundColor = shade;
     setTimeout(function(){
@@ -57,6 +58,7 @@ function clickColor(shade, btnName, color, compArr, playerArr){
     }
 }
 
+// DONE
 function genRandColor(){
     let rand = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
     console.log("rand:",rand)
@@ -84,10 +86,14 @@ function addCompChoice(){
 }
 
 function init(compArr, playerArr){
+    console.log("compChoices:",compChoices);
+    console.log("playerChoices:",playerChoices);
     compArr = [];
-    console.log("compChoices", compChoices)
+    console.log("compChoices:",compChoices);
+    console.log("playerChoices:",playerChoices);
     playerArr = [];
-    console.log("playerChoices", playerChoices)
+    console.log("compChoices:",compChoices);
+    console.log("playerChoices:",playerChoices);
     compTurn();
 }
 
