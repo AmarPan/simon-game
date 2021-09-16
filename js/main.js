@@ -75,9 +75,11 @@ function addCompChoice(){
     
 }
 
-function init(){
-    compChoices = [];
-    playerChoices = [];
+function init(compArr, playerArr){
+    compArr = [];
+    console.log("compChoices", compChoices)
+    playerArr = [];
+    console.log("playerChoices", playerChoices)
     compTurn();
 }
 
