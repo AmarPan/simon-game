@@ -27,7 +27,9 @@ btnYellow.addEventListener("click", function(){
     clickColor("yellow", "btnYellow", "yellow", compChoices, playerChoices)
 });
 
-btnNext.addEventListener("click", nextLevel);
+btnNext.addEventListener("click", function(){
+    nextLevel(compChoices, playerChoices)
+});
 
 btnStart.addEventListener("click",function(){
     init(compChoices, playerChoices)
@@ -112,7 +114,7 @@ function init(compArr, playerArr){
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
-    compTurn();
+    compTurn(compArr, playerArr);
 
 }
 
@@ -134,29 +136,30 @@ function changeTurn(){
 //     console.log("Color",color)
 // })
 
-function compTurn(){
+function compTurn(compArr, playerArr){
     let delay = 1500;
     document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
     document.querySelector("#turn").style.color = "red";
-    for(let i = 0; i < compChoices.length;i++){
-        if(compChoices[i] === "hotpink"){
+    let temp = compArr;
+    for(let i = 0; i < compArr.length; i++){
+        if(compArr[i] === "hotpink"){
             //console.log("pushStatus:",pushStatus)
             setTimeout(function(){
-                clickColor("hotpink","btnPink", "pink", compChoices, playerChoices)
+                clickColor("hotpink","btnPink", "pink", compArr, playerArr)
             },delay)
         }
-        else if(compChoices[i] === "limegreen"){
+        else if(compArr[i] === "limegreen"){
             setTimeout(function(){
-                clickColor("limegreen","btnGreen", "green", compChoices, playerChoices)
+                clickColor("limegreen","btnGreen", "green", compArr, playerArr)
             },delay)
         }
-        else if(compChoices[i] === "aqua"){
+        else if(compArr[i] === "aqua"){
             setTimeout(function(){
-                clickColor("aqua","btnBlue", "blue", compChoices, playerChoices)
+                clickColor("aqua","btnBlue", "blue", compArr, playerArr)
             },delay)
         }else{
             setTimeout(function(){
-                clickColor("yellow","btnYellow", "yellow", compChoices, playerChoices)
+                clickColor("yellow","btnYellow", "yellow", compArr, playerArr)
             },delay)
         }
         //console.log("Delay:",delay);
@@ -189,7 +192,7 @@ function checkAnswer(){
     //document.querySelector("#status").innerHTML = "Correct! Nice job! Click 'Next Level' to move on";
 }
 
-function nextLevel(){
+function nextLevel(compArr, playerArr){
     clearStatus();
     playerChoices = []
     console.log("playerChoices:",playerChoices);
@@ -203,7 +206,7 @@ function nextLevel(){
     aside.appendChild(li);
     pushStatus = false;
     changeTurn()
-    compTurn()
+    compTurn(compArr, playerArr)
     //changeTurn()
 }
 
