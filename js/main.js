@@ -3,6 +3,7 @@ let playerChoices = [];
 let playerTurn = false;
 let pushStatus = false;
 let livesLeft = 3;
+let test = 0;
 
 btnTry.addEventListener("click",tryAgain)
 
