@@ -4,7 +4,7 @@ let playerTurn = false;
 let pushStatus = false;
 let livesLeft = 3;
 let test = 1;
-let test2 = 2;
+let test2 = 3;
 
 btnTry.addEventListener("click",tryAgain)
 
