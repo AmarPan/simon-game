@@ -4,42 +4,53 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    height:100x;
+    width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .6fr .3fr .1fr;
+    grid-template-columns: .5fr .5fr 1.6fr .5fr .5fr;
+    grid-template-rows: 2.5fr .3fr .3fr;
+    text-align: center;
 }
 
 header {
     background-color:black;
-    grid-column: span 3;
-    text-align: center;
+    grid-column: span 1;
     color: white;
 }
 
 header h1{
-    color: hotpink;
-    
+    coloR:yellow;
+}
+
+header h2{
+    color:AQUA;
 }
 
 section {
-    background-color: green;
-    text-align: center;
+    background-color:hotpink;
+    padding:275px 0
+
 }
 
 aside {
-    background-color: purple;
+    background-color: aqua;
     text-align: center;
+    
 }
 
+aside ol {
+    text-align: center\;
+}
 main {
-    background-color: salmon;
+    background-color: limegreen;
+    padding: 0 20px;
+    grid-column: span 5;
 }
 
 footer {
-    background-color: sienna;
-    grid-column: span 3;
-    text-align: center;
+    background-color: limegreen;
+    grid-column: span 5;
+    
 }
 
 .board {

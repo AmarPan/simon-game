@@ -1,8 +1,10 @@
-let compChoices = ["pink","yellow"];
+let compChoices = [];
 let playerChoices = [];
 let playerTurn = false;
 let pushStatus = false;
-let wrongAttempts = 0;
+let livesLeft = 3;
+
+btnTry.addEventListener("click",tryAgain)
 
 btnPink.addEventListener("click", clickPink);
 
@@ -12,9 +14,11 @@ btnBlue.addEventListener("click", clickBlue);
 
 btnYellow.addEventListener("click", clickYellow);
 
-btnNext.addEventListener("click", nextLevel)
+btnNext.addEventListener("click", nextLevel);
 
-btnCheck.addEventListener("click",checkAnswer)
+btnStart.addEventListener("click",init);
+
+btnCheck.addEventListener("click",checkAnswer);
 
 function clickPink(){
     document.getElementById("btnPink").style.backgroundColor = "hotpink";
@@ -24,10 +28,10 @@ function clickPink(){
     if(playerTurn){ //&& pushStatus){
         playerChoices.push("pink");
         console.log("playerChoices:",playerChoices)
-        let node = document.querySelector("ol");
-        let sub = document.createElement("li");
-        sub.innerHTML = "pink"
-        node.appendChild(sub);
+        let ol = document.querySelector("ol");
+        let li = document.createElement("li");
+        li.innerHTML = "pink"
+        ol.appendChild(li);
         //let textnode = document.createTextNode("pink\n");
         //node.appendChild(textnode);
         //document.querySelector("ol").appendChild(node);
@@ -50,10 +54,10 @@ function clickGreen(){
     if(playerTurn){ //&& pushStatus){
         playerChoices.push("green");
         console.log("playerChoices:",playerChoices)
-        let node = document.querySelector("ol");
-        let sub = document.createElement("li");
-        sub.innerHTML = "green"
-        node.appendChild(sub);
+        let ol = document.querySelector("ol");
+        let li = document.createElement("li");
+        li.innerHTML = "green"
+        ol.appendChild(li);
     // }else if(playerTurn && !pushStatus){
     //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
@@ -72,10 +76,10 @@ function clickBlue(){
     if(playerTurn){ //&& pushStatus){
         playerChoices.push("blue");
         console.log("playerChoices:",playerChoices)
-        let node = document.querySelector("ol");
-        let sub = document.createElement("li");
-        sub.innerHTML = "blue"
-        node.appendChild(sub);
+        let ol = document.querySelector("ol");
+        let li = document.createElement("li");
+        li.innerHTML = "blue"
+        ol.appendChild(li);
     // }else if(playerTurn && !pushStatus){
     //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
@@ -94,10 +98,10 @@ function clickYellow(){
     if(playerTurn){ //&& pushStatus){
         playerChoices.push("yellow");
         console.log("playerChoices:",playerChoices)
-        let node = document.querySelector("ol");
-        let sub = document.createElement("li");
-        sub.innerHTML = "yellow"
-        node.appendChild(sub);
+        let ol = document.querySelector("ol");
+        let li = document.createElement("li");
+        li.innerHTML = "yellow"
+        ol.appendChild(li);
     // }else if(playerTurn && !pushStatus){
     //     console.log("playerTurn:",playerTurn,"pushStatus:",pushStatus,"playerChoices:",playerChoices)
     }else if(!playerTurn && pushStatus){
@@ -127,8 +131,12 @@ function addCompChoice(){
         }else{
             clickYellow();
         }
-        playerTurn = true;
-        console.log("playerTurn:",playerTurn);
+    playerTurn = true;
+    console.log("playerTurn:",playerTurn);
+    let turn = document.querySelector("#turn");
+    turn.textContent = "PLAYER'S TURN"
+    turn.style.color = "limegreen"
+    
 }
 
 function addPlayerChoice(){
@@ -136,7 +144,8 @@ function addPlayerChoice(){
 }
 
 function init(){
-    compTurn()
+    compChoices = [];
+    compTurn();
 }
 
 function changeTurn(){
@@ -150,6 +159,8 @@ function changeTurn(){
 
 function compTurn(){
     let delay = 1500;
+    document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
+    document.querySelector("#turn").style.color = "red";
     for(let i = 0; i < compChoices.length;i++){
         if(compChoices[i] === "pink"){
             //console.log("pushStatus:",pushStatus)
@@ -176,11 +187,11 @@ function checkAnswer(){
     for(let i = 0; i < compChoices.length; i++){
         if(compChoices.length !== playerChoices.length){
             console.log("Lengths of compChoices and playerChoices don't match")
-            document.querySelector("#status").innerHTML = "Wrong answer, try again!";
+            document.querySelector("#status").innerHTML = "Wrong answer! Click 'try again' to use another life";
             break;
         }else if(compChoices[i] !== playerChoices[i]){
             console.log("Wrong match at Index:",i);
-            document.querySelector("#status").innerHTML = "Wrong answer, try again!";
+            document.querySelector("#status").innerHTML = "Wrong answer! Click 'try again' to use another life";
             break;
         }
         else if(i === compChoices.length - 1 && compChoices[i] === playerChoices[i]){
@@ -192,6 +203,17 @@ function checkAnswer(){
 }
 
 function nextLevel(){
+    clearStatus();
+    playerChoices = []
+    console.log(playerChoices);
+    let turn = document.querySelector("#turn");
+    turn.textContent = "COMPUTER'S TURN"
+    turn.style.color = "red"
+    document.querySelector("ol").remove()
+    let li = document.createElement("ol");
+    //li.innerHTML = "Current Selection:"
+    let aside = document.querySelector("#selectionParent");
+    aside.appendChild(li);
     pushStatus = false;
     changeTurn()
     compTurn()
@@ -199,7 +221,27 @@ function nextLevel(){
 }
 
 function tryAgain(){
+    livesLeft = livesLeft - 1;
+    document.querySelector("#left").innerHTML = livesLeft;
+    clearStatus();
     playerChoices = []
+    console.log("playerChoice:",playerChoices)
+    document.querySelector("ol").remove()
+    let li = document.createElement("ol");
+    let aside = document.querySelector("#selectionParent");
+    aside.appendChild(li);
 }
 
-init();
+function removeTest(){
+        document.querySelector("ol").remove()
+        let li = document.createElement("ol");
+        li.innerHTML = "Current Selection:"
+        let aside = document.querySelector("aside");
+        aside.appendChild(li);
+
+    //document.querySelector("li").innerHTML = "";
+}
+
+function clearStatus(){
+    document.querySelector("#status").innerHTML = "";
+}

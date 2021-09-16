@@ -9,28 +9,38 @@
     
 </head>
 <body>
+    <aside>
+        <div>
+            <h2>Lives Left:</h2> <p id="left">3</p>
+        </div>
+    
+    </aside>
+    
+    <section>
+        <button type="button" id="btnTry">TRY AGAIN</button><br><br>
+    </section>
     <header>
-        <h1><span id="pink"><u>SI</u></span><span id="green"><u>MO</u></span><span id="blue"><u>N 2</u></span><span id="yellow"><u>.0</u></span></u></h1>
+        <h1>SIMON</h1>
         <div>
             <button type="button" id="btnPink" class="board" >PINK</button>
             <button type="button" id="btnGreen" class="board" >GREEN</button><br>
             <button type="button" id="btnBlue" class="board" >BLUE</button>
             <button type="button" id="btnYellow" class="board" >YELLOW</button>
         </div>
+        <h2 id="turn">PRESS START</h2>
+        <button type="button" id="btnStart">START</button><br><br>
+        <button type="button" id="btnCheck">CHECK ANSWER</button><br><br>
+        <h2 id="status"></h1>
 
     </header>
-    <section>SECTION
-        <div>
-            <button type="button" id="btnNext">NEXT LEVEL</button><br><br>
-            <button type="button" id="btnCheck">CHECK ANSWER</button>
-        </div>
-
+    <section>
+        <button type="button" id="btnNext">NEXT LEVEL</button><br><br>
     </section>
-    <main>MAIN
-        <h1 id="status"></h1>
-    </main>
-    <aside>ASIDE
-        <ol>Current Selection:</ol>
+    <aside id="selectionParent">
+        <h2>Current Selection:</h2>
+        <ol id="selection">
+        </ol>
+
 
 
     </aside>
