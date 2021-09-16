@@ -29,7 +29,9 @@ btnYellow.addEventListener("click", function(){
 
 btnNext.addEventListener("click", nextLevel);
 
-btnStart.addEventListener("click",init);
+btnStart.addEventListener("click",function(){
+    init(compChoices, playerChoices)
+});
 
 btnCheck.addEventListener("click",checkAnswer);
 
@@ -42,7 +44,9 @@ function clickColor(shade, btnName, color, compArr, playerArr){
     if(playerTurn){
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
+
         playerArr.push(shade);
+
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
         let ol = document.querySelector("ol");
@@ -53,6 +57,7 @@ function clickColor(shade, btnName, color, compArr, playerArr){
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
         compArr.push(shade);
+
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
     }
@@ -61,9 +66,13 @@ function clickColor(shade, btnName, color, compArr, playerArr){
 // DONE
 function genRandColor(){
     let rand1 = Math.random() * (3 - 0 + 1) + 0;
+
     console.log("rand1:",rand1)
+
     let rand2 = Math.floor(rand1)
+
     console.log("rand2:",rand2)
+
     return rand2;
 }
 
@@ -80,7 +89,9 @@ function addCompChoice(compArr, playerArr){
             clickColor("yellow", "btnYellow", "yellow", compArr, playerArr);
         }
     playerTurn = true;
+
     console.log("playerTurn:",playerTurn);
+
     let turn = document.querySelector("#turn");
     turn.textContent = "PLAYER'S TURN"
     turn.style.color = "limegreen"
@@ -90,13 +101,18 @@ function addCompChoice(compArr, playerArr){
 function init(compArr, playerArr){
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
+
     compArr = [];
+
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
+
     playerArr = [];
+
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
     compTurn();
+
 }
 
 function changeTurn(){
