@@ -7,22 +7,22 @@ let livesLeft = 3;
 btnTry.addEventListener("click",tryAgain)
 
 btnPink.addEventListener("click", function(){
-    clickColor("hotpink", "btnPink", "pink")
+    clickColor("hotpink", "btnPink", "pink", compChoices, playerChoices)
 });
 
 //btnGreen.addEventListener("click", clickGreen);
 btnGreen.addEventListener("click", function(){
-    clickColor("limegreen", "btnGreen", "green")
+    clickColor("limegreen", "btnGreen", "green", compChoices, playerChoices)
 });
 
 //btnBlue.addEventListener("click", clickBlue);
 btnBlue.addEventListener("click", function(){
-    clickColor("aqua", "btnBlue", "blue")
+    clickColor("aqua", "btnBlue", "blue", compChoices, playerChoices)
 });
 
 //btnYellow.addEventListener("click", clickYellow);
 btnYellow.addEventListener("click", function(){
-    clickColor("yellow", "btnYellow", "yellow")
+    clickColor("yellow", "btnYellow", "yellow", compChoices, playerChoices)
 });
 
 btnNext.addEventListener("click", nextLevel);
@@ -31,20 +31,20 @@ btnStart.addEventListener("click",init);
 
 btnCheck.addEventListener("click",checkAnswer);
 
-function clickColor(shade, btnName, color){
+function clickColor(shade, btnName, color, compArr, playerArr){
     document.getElementById(btnName).style.backgroundColor = shade;
     setTimeout(function(){
         document.getElementById(btnName).style.backgroundColor = "black";
     },300);
     if(playerTurn){
-        playerChoices.push(shade);
+        playerArr.push(shade);
         console.log("playerChoices:",playerChoices)
         let ol = document.querySelector("ol");
         let li = document.createElement("li");
         li.innerHTML = color;
         ol.appendChild(li);
     }else if(!playerTurn && pushStatus){
-        compChoices.push(shade);
+        compArr.push(shade);
         console.log("compChoices:",compChoices)
     }
 }
@@ -145,13 +145,13 @@ function addCompChoice(){
     let next = genRandColor();
     pushStatus = true;
         if(next === 0){
-            clickColor("hotpink", "btnPink", "pink");
+            clickColor("hotpink", "btnPink", "pink", compChoices, playerChoices);
         }else if(next === 1){
-            clickColor("limegreen", "btnGreen", "green");
+            clickColor("limegreen", "btnGreen", "green", compChoices, playerChoices);
         }else if(next === 2){
-            clickColor("aqua", "btnBlue", "blue");
+            clickColor("aqua", "btnBlue", "blue", compChoices, playerChoices);
         }else{
-            clickColor("yellow", "btnYellow", "yellow");
+            clickColor("yellow", "btnYellow", "yellow", compChoices, playerChoices);
         }
     playerTurn = true;
     console.log("playerTurn:",playerTurn);
@@ -188,21 +188,21 @@ function compTurn(){
         if(compChoices[i] === "hotpink"){
             //console.log("pushStatus:",pushStatus)
             setTimeout(function(){
-                clickColor("hotpink","btnPink", "pink")
+                clickColor("hotpink","btnPink", "pink", compChoices, playerChoices)
             },delay)
         }
         else if(compChoices[i] === "limegreen"){
             setTimeout(function(){
-                clickColor("limegreen","btnGreen", "green")
+                clickColor("limegreen","btnGreen", "green", compChoices, playerChoices)
             },delay)
         }
         else if(compChoices[i] === "aqua"){
             setTimeout(function(){
-                clickColor("aqua","btnBlue", "blue")
+                clickColor("aqua","btnBlue", "blue", compChoices, playerChoices)
             },delay)
         }else{
             setTimeout(function(){
-                clickColor("yellow","btnYellow", "yellow")
+                clickColor("yellow","btnYellow", "yellow", compChoices, playerChoices)
             },delay)
         }
         //console.log("Delay:",delay);
