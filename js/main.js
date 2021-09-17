@@ -105,7 +105,7 @@ function clickColor(shade, btnName, color, compArr, playerArr){
 }
 
 function render(){
-    
+
 }
 
 // DONE
@@ -184,9 +184,9 @@ function checkAnswer(compArr, playerArr){
             document.querySelector("#status").innerHTML = "Correct! Click 'Next Level' to move on.";
             wrongAnswer = false;
             console.log("check3");
-            if(playerArr.length === 10)
+            if(playerArr.length === 7)
             {
-                document.querySelector("#status").innerHTML = "You got 10 correct! You win!";
+                document.querySelector("#status").innerHTML = "You got 7 correct! You win!";
             }
         }
     }
