@@ -11,7 +11,8 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 80vh;
+    width: 1000px;
     display: grid;
     grid-template-columns: .4fr .6fr 1.6fr .6fr .4fr;
     grid-template-rows: 2.5fr .3fr .3fr;
@@ -29,7 +30,7 @@ header h1{
 }
 
 header h2{
-    color:AQUA;
+    color:aqua;
 }
 
 section {
@@ -45,8 +46,9 @@ aside {
 }
 
 aside ol {
-    text-align: center\;
+    text-align: center;
 }
+
 main {
     background-color: limegreen;
     padding: 0 20px;
