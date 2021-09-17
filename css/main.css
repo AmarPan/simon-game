@@ -5,15 +5,17 @@
     Date: 9/16/21
 */
 
-
 * {
     box-sizing: border-box;
 }
 
+html {
+    height: 90vh;
+    width: 90vw;
+}
+
 body {
     margin: 0;
-    height:100x;
-    width: 1000px;
     display: grid;
     grid-template-columns: .4fr .6fr 1.6fr .6fr .4fr;
     grid-template-rows: 2.5fr .3fr .3fr;
@@ -63,8 +65,8 @@ footer {
 
 .board {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     color: white;
     background-color: black;
     border-width:25px
