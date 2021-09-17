@@ -7,7 +7,9 @@ let test = ["monks"]
 let test2 = 3;
 let wrongAnswer = false;
 
-btnTry.addEventListener("click",tryAgain)
+btnTry.addEventListener("click", function(){
+    tryAgain(compChoices, playerChoices);
+})
 
 btnPink.addEventListener("click", function(){
     clickColor("hotpink", "btnPink", "pink", compChoices, playerChoices)
@@ -52,6 +54,7 @@ function clickColor(shade, btnName, color, compArr, playerArr){
 
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
+
         let ol = document.querySelector("ol");
         let li = document.createElement("li");
         li.innerHTML = color;
@@ -59,6 +62,7 @@ function clickColor(shade, btnName, color, compArr, playerArr){
     }else if(!playerTurn && pushStatus){
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
+
         compArr.push(shade);
 
         console.log("compChoices:",compChoices);
@@ -97,21 +101,17 @@ function addCompChoice(compArr, playerArr){
     console.log("playerTurn:",playerTurn);
     
     changeTurnStatus(1);
-
-    // let turn = document.querySelector("#turn");
-    // turn.textContent = "PLAYER'S TURN"
-    // turn.style.color = "limegreen"
-    
 }
 
 // DONE
 function init(compArr, playerArr){
     livesLeft = 3;
-    document.querySelector("#game-over").innerHTML = "";
+    //document.querySelector("#game-over").innerHTML = "";
     document.querySelector("#left").innerHTML = livesLeft;
+    clearStatus();
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
-
+    
     clearArray(compArr);
     //compArr.length = 0;
 
@@ -123,6 +123,8 @@ function init(compArr, playerArr){
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
+    refresh();
+
     compTurn(compArr, playerArr);
 
 }
@@ -149,13 +151,10 @@ function changeTurnStatus(status){
     }
 }
 
-
+// DONE
 function compTurn(compArr, playerArr){
     let delay = 1500;
     changeTurnStatus(0);
-    //document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
-   // document.querySelector("#turn").style.color = "red";
-    let temp = compArr;
     for(let i = 0; i < compArr.length; i++){
         if(compArr[i] === "hotpink"){
             //console.log("pushStatus:",pushStatus)
@@ -177,41 +176,25 @@ function compTurn(compArr, playerArr){
                 clickColor("yellow","btnYellow", "yellow", compArr, playerArr)
             },delay)
         }
-        //console.log("Delay:",delay);
         delay = delay + 750;
     }
-    //pushStatus = true;
-    //delay = delay + 750;
     setTimeout(function(){
         addCompChoice(compChoices, playerChoices)
     },delay);
 }
     
-
+// DONE
 function checkAnswer(){
     for(let i = 0; i < compChoices.length; i++){
-        // if(compChoices.length !== playerChoices.length ){
-        //     console.log("Lengths of compChoices and playerChoices don't match")
-        //     document.querySelector("#status").innerHTML = "Wrong answer! Click 'try again' to use another life";
-        //     wrongAnswer = true;
-        //     if(wrongAnswer = true && livesLeft === 0){
-        //         let gameOver = document.querySelector("#game-over")
-        //         gameOver.innerHTML = "GAME OVER"
-        //         gameOver.style.color = "red";    
-        //     }
-        //     break;
         if(compChoices[i] !== playerChoices[i] || compChoices.length !== playerChoices.length){
             console.log("Wrong match at Index:",i);
+
             document.querySelector("#status").style.color = "red";
             document.querySelector("#status").innerHTML = "Wrong answer! Click 'Try Again' to use another life.";
             wrongAnswer = true;
             if(wrongAnswer = true && livesLeft === 0){
                 document.querySelector("#status").style.color = "red";
                 document.querySelector("#status").innerHTML = "Wrong! No lives remaining.<br>GAME OVER!"
-                // let gameOver = document.querySelector("#game-over")
-                // gameOver.innerHTML = "GAME OVER"
-                // gameOver.style.color = "red";  
-                // document.querySelectorAll(".over").classList = "disabled"  
             }
             break;
         }
@@ -222,54 +205,59 @@ function checkAnswer(){
             wrongAnswer = false;
         }
     }
-    
-    //document.querySelector("#status").innerHTML = "Correct! Nice job! Click 'Next Level' to move on";
 }
 
+// DONE
 function nextLevel(compArr, playerArr){
     clearStatus();
-    playerChoices = []
+    clearArray(playerArr);
+
+    console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
-    let turn = document.querySelector("#turn");
-    turn.textContent = "COMPUTER'S TURN"
-    turn.style.color = "red"
-    document.querySelector("ol").remove()
-    let li = document.createElement("ol");
-    //li.innerHTML = "Current Selection:"
-    let aside = document.querySelector("#selectionParent");
-    aside.appendChild(li);
+    changeTurnStatus(0);
+    // let turn = document.querySelector("#turn");
+    // turn.textContent = "COMPUTER'S TURN"
+    // turn.style.color = "red"
+    refresh();
+    // document.querySelector("ol").remove()
+    // let li = document.createElement("ol");
+    // //li.innerHTML = "Current Selection:"
+    // let aside = document.querySelector("#selectionParent");
+    // aside.appendChild(li);
     pushStatus = false;
     changeTurn()
     compTurn(compArr, playerArr)
-    //changeTurn()
 }
 
-function tryAgain(){
+// DONE
+function tryAgain(compArr, playerArr){
     livesLeft = livesLeft - 1;
     if (livesLeft > -1){
         document.querySelector("#left").innerHTML = livesLeft;
         clearStatus();
-        playerChoices = []
-        console.log("playerChoice:",playerChoices)
-        document.querySelector("ol").remove()
-        let li = document.createElement("ol");
-        let aside = document.querySelector("#selectionParent");
-        aside.appendChild(li);
+        clearArray(playerArr);
+        //playerChoices = []
+
+        console.log("compChoices:",compChoices)
+        console.log("playerChoices:",playerChoices)
+
+        // document.querySelector("ol").remove()
+        // let ol = document.createElement("ol");
+        // let aside = document.querySelector("#selectionParent");
+        // aside.appendChild(ol);
+        refresh();
     }
-    
-    
 }
 
-function removeTest(){
-        document.querySelector("ol").remove()
-        let li = document.createElement("ol");
-        li.innerHTML = "Current Selection:"
-        let aside = document.querySelector("aside");
-        aside.appendChild(li);
-
-    //document.querySelector("li").innerHTML = "";
+// DONE
+function refresh(){
+    document.querySelector("ol").remove();
+    let ol = document.createElement("ol");
+    let aside = document.querySelector("#selectionParent");
+    aside.appendChild(ol);
 }
 
+//DONE
 function clearStatus(){
     document.querySelector("#status").innerHTML = "";
 }
