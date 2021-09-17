@@ -13,13 +13,13 @@ body {
 }
 
 header {
-    background-color:black;
+    background-color:yellow;
     grid-column: span 1;
     color: white;
 }
 
 header h1{
-    coloR:yellow;
+    color:black;
 }
 
 header h2{
@@ -112,9 +112,4 @@ footer {
 
 aside h4 {
     margin-left: 20px;
-}
-
-.disabled{
-    opacity: 0.6;
-    cursor: not-allowed;
 }

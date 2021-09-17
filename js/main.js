@@ -2,9 +2,7 @@ let compChoices = [];
 let playerChoices = [];
 let playerTurn = false;
 let pushStatus = false;
-let livesLeft = 3;
-let test = ["monks"]
-let test2 = 3;
+let livesLeft;
 let wrongAnswer = false;
 
 btnTry.addEventListener("click", function(){
@@ -38,7 +36,32 @@ btnStart.addEventListener("click",function(){
     init(compChoices, playerChoices)
 });
 
-btnCheck.addEventListener("click",checkAnswer);
+btnCheck.addEventListener("click",function(){
+    checkAnswer(compChoices, playerChoices);
+});
+
+// DONE
+function init(compArr, playerArr){
+    livesLeft = 3;
+    playerTurn = false;
+    document.querySelector("#left").innerHTML = livesLeft;
+    clearStatus();
+    console.log("compChoices:",compChoices);
+    console.log("playerChoices:",playerChoices);
+    
+    clearArray(compArr);
+
+    console.log("compChoices:",compChoices);
+    console.log("playerChoices:",playerChoices);
+
+    clearArray(playerArr);
+
+    console.log("compChoices:",compChoices);
+    console.log("playerChoices:",playerChoices);
+    refresh();
+
+    compTurn(compArr, playerArr);
+}
 
 // DONE
 function clickColor(shade, btnName, color, compArr, playerArr){
@@ -67,87 +90,6 @@ function clickColor(shade, btnName, color, compArr, playerArr){
 
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
-    }
-}
-
-// DONE
-function genRandColor(){
-    let rand = Math.random() * (3 - 0 + 1) + 0;
-
-    console.log("rand1:",rand)
-
-    let randRound = Math.floor(rand)
-
-    console.log("rand2:",randRound)
-
-    return randRound;
-}
-
-// DONE
-function addCompChoice(compArr, playerArr){
-    let next = genRandColor();
-    pushStatus = true;
-        if(next === 0){
-            clickColor("hotpink", "btnPink", "pink", compArr, playerArr);
-        }else if(next === 1){
-            clickColor("limegreen", "btnGreen", "green", compArr, playerArr);
-        }else if(next === 2){
-            clickColor("aqua", "btnBlue", "blue", compArr, playerArr);
-        }else{
-            clickColor("yellow", "btnYellow", "yellow", compArr, playerArr);
-        }
-    playerTurn = true;
-
-    console.log("playerTurn:",playerTurn);
-    
-    changeTurnStatus(1);
-}
-
-// DONE
-function init(compArr, playerArr){
-    livesLeft = 3;
-    //document.querySelector("#game-over").innerHTML = "";
-    document.querySelector("#left").innerHTML = livesLeft;
-    clearStatus();
-    console.log("compChoices:",compChoices);
-    console.log("playerChoices:",playerChoices);
-    
-    clearArray(compArr);
-    //compArr.length = 0;
-
-    console.log("compChoices:",compChoices);
-    console.log("playerChoices:",playerChoices);
-
-    clearArray(playerArr);
-    //playerArr.length = 0;
-
-    console.log("compChoices:",compChoices);
-    console.log("playerChoices:",playerChoices);
-    refresh();
-
-    compTurn(compArr, playerArr);
-
-}
-
-// DONE
-function clearArray(playerArr){
-    playerArr.length = 0;
-}
-
-// DONE
-function changeTurn(){
-    playerTurn = !playerTurn;
-    console.log("playerTurn:",playerTurn);
-}
-
-// DONE
-function changeTurnStatus(status){
-    if(status === 0){
-        document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
-        document.querySelector("#turn").style.color = "red";
-    }else if(status === 1){
-        document.querySelector("#turn").innerHTML = "PLAYER'S TURN"
-        document.querySelector("#turn").style.color = "limegreen";
     }
 }
 
@@ -182,19 +124,42 @@ function compTurn(compArr, playerArr){
         addCompChoice(compChoices, playerChoices)
     },delay);
 }
-    
+
 // DONE
-function checkAnswer(){
-    for(let i = 0; i < compChoices.length; i++){
-        if(compChoices[i] !== playerChoices[i] || compChoices.length !== playerChoices.length){
+function addCompChoice(compArr, playerArr){
+    let next = genRandColor();
+    pushStatus = true;
+        if(next === 0){
+            clickColor("hotpink", "btnPink", "pink", compArr, playerArr);
+        }else if(next === 1){
+            clickColor("limegreen", "btnGreen", "green", compArr, playerArr);
+        }else if(next === 2){
+            clickColor("aqua", "btnBlue", "blue", compArr, playerArr);
+        }else{
+            clickColor("yellow", "btnYellow", "yellow", compArr, playerArr);
+        }
+    playerTurn = true;
+
+    console.log("playerTurn:",playerTurn);
+    
+    changeTurnStatus(1);
+}
+
+//
+function checkAnswer(compArr, playerArr){
+    console.log("check1");
+    for(let i = 0; i < compArr.length; i++){
+        if(compArr[i] !== playerArr[i] || compArr.length !== playerArr.length){
             console.log("Wrong match at Index:",i);
 
             document.querySelector("#status").style.color = "red";
             document.querySelector("#status").innerHTML = "Wrong answer! Click 'Try Again' to use another life.";
             wrongAnswer = true;
+            console.log("check2");
             if(wrongAnswer = true && livesLeft === 0){
                 document.querySelector("#status").style.color = "red";
                 document.querySelector("#status").innerHTML = "Wrong! No lives remaining.<br>GAME OVER!"
+                console.log("check2.5");
             }
             break;
         }
@@ -203,6 +168,7 @@ function checkAnswer(){
             document.querySelector("#status").style.color = "limegreen";
             document.querySelector("#status").innerHTML = "Correct! Click 'Next Level' to move on.";
             wrongAnswer = false;
+            console.log("check3");
         }
     }
 }
@@ -215,15 +181,7 @@ function nextLevel(compArr, playerArr){
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
     changeTurnStatus(0);
-    // let turn = document.querySelector("#turn");
-    // turn.textContent = "COMPUTER'S TURN"
-    // turn.style.color = "red"
     refresh();
-    // document.querySelector("ol").remove()
-    // let li = document.createElement("ol");
-    // //li.innerHTML = "Current Selection:"
-    // let aside = document.querySelector("#selectionParent");
-    // aside.appendChild(li);
     pushStatus = false;
     changeTurn()
     compTurn(compArr, playerArr)
@@ -236,16 +194,46 @@ function tryAgain(compArr, playerArr){
         document.querySelector("#left").innerHTML = livesLeft;
         clearStatus();
         clearArray(playerArr);
-        //playerChoices = []
 
         console.log("compChoices:",compChoices)
         console.log("playerChoices:",playerChoices)
 
-        // document.querySelector("ol").remove()
-        // let ol = document.createElement("ol");
-        // let aside = document.querySelector("#selectionParent");
-        // aside.appendChild(ol);
         refresh();
+    }
+}
+
+// DONE
+function genRandColor(){
+    let rand = Math.random() * (3 - 0 + 1) + 0;
+
+    console.log("rand1:",rand)
+
+    let randRound = Math.floor(rand)
+
+    console.log("rand2:",randRound)
+
+    return randRound;
+}
+
+// DONE
+function clearArray(playerArr){
+    playerArr.length = 0;
+}
+
+// DONE
+function changeTurn(){
+    playerTurn = !playerTurn;
+    console.log("playerTurn:",playerTurn);
+}
+
+// DONE
+function changeTurnStatus(status){
+    if(status === 0){
+        document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
+        document.querySelector("#turn").style.color = "red";
+    }else if(status === 1){
+        document.querySelector("#turn").innerHTML = "PLAYER'S TURN"
+        document.querySelector("#turn").style.color = "limegreen";
     }
 }
 
