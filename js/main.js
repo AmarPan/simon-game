@@ -1,3 +1,10 @@
+/*
+    Name: Amar Panjwani
+    Title: Simon Game (GA SEI Project 1)
+    Email: amar.panjwani@gmail.com
+    Date: 9/16/21
+*/
+
 let compChoices = [];
 let playerChoices = [];
 let playerTurn = false;
@@ -169,6 +176,10 @@ function checkAnswer(compArr, playerArr){
             document.querySelector("#status").innerHTML = "Correct! Click 'Next Level' to move on.";
             wrongAnswer = false;
             console.log("check3");
+            if(playerArr.length === 10)
+            {
+                document.querySelector("#status").innerHTML = "You got 10 correct! You win!";
+            }
         }
     }
 }
