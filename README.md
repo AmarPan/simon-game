@@ -6,3 +6,5 @@ The goal of the game is to press the colors in the exact same pattern and order 
 
 ## Screenshots
 
+![Computer's Turn](/images/screenshotComputersTurn.jpg)
+![Player's Turn](/images/screenshotPlayersTurn.jpg)
