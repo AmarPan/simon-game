@@ -11,36 +11,33 @@ let livesLeft;
 let playerTurn;
 let pushStatus;
 let wrongAnswer;
-let repeat;
 
 btnTry.addEventListener("click", function(){
-    tryAgain(compChoices, playerChoices)
+    tryAgain(compChoices, playerChoices);
 });
 
 btnPink.addEventListener("click", function(){
-    clickColor("hotpink", "btnPink", "pink", compChoices, playerChoices)
+    clickColor("hotpink", "btnPink", "pink", compChoices, playerChoices);
 });
 
 btnGreen.addEventListener("click", function(){
-    clickColor("limegreen", "btnGreen", "green", compChoices, playerChoices)
+    clickColor("limegreen", "btnGreen", "green", compChoices, playerChoices);
 });
 
-//btnBlue.addEventListener("click", clickBlue);
 btnBlue.addEventListener("click", function(){
-    clickColor("aqua", "btnBlue", "blue", compChoices, playerChoices)
+    clickColor("aqua", "btnBlue", "blue", compChoices, playerChoices);
 });
 
-//btnYellow.addEventListener("click", clickYellow);
 btnYellow.addEventListener("click", function(){
-    clickColor("yellow", "btnYellow", "yellow", compChoices, playerChoices)
+    clickColor("yellow", "btnYellow", "yellow", compChoices, playerChoices);
 });
 
 btnNext.addEventListener("click", function(){
-    nextLevel(compChoices, playerChoices)
+    nextLevel(compChoices, playerChoices);
 });
 
 btnStart.addEventListener("click",function(){
-    init(compChoices, playerChoices)
+    init(compChoices, playerChoices);
 });
 
 btnCheck.addEventListener("click",function(){
@@ -54,7 +51,6 @@ function init(compArr, playerArr){
     playerTurn = false;
     pushStatus = false;
     wrongAnswer = false;
-    repeat = false;
     document.querySelector("#left").innerHTML = livesLeft;
     clearStatus();
     refreshCurrentSelection();
