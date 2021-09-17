@@ -5,7 +5,7 @@ This game is a recreation of the children's favorite and classic of the same nam
 The goal of the game is to press the colors in the exact same pattern and order as the computer. 
 
 ## How to Win
-A player wins when he gets to the 7th level and successfully matches a computer-generated combination of 7 colors.
+A player wins by getting to the 7th level and successfully matching a computer-generated combination of 7 colors.
 
 ## Screenshots
 
