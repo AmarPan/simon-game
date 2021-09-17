@@ -176,7 +176,7 @@ function checkAnswer(compArr, playerArr){
             document.querySelector("#status").innerHTML = "Wrong answer! Click 'Try Again' to use another life.";
             wrongAnswer = true;
             console.log("check2");
-            if(wrongAnswer = true && livesLeft === 0){
+            if(wrongAnswer = true && livesLeft <= 0){
                 document.querySelector("#status").style.color = "red";
                 document.querySelector("#status").innerHTML = "Wrong! No lives remaining.<br>GAME OVER!"
                 console.log("check2.5");
@@ -223,13 +223,20 @@ function tryAgain(compArr, playerArr){
         console.log("playerChoices:",playerChoices)
 
         refreshCurrentSelection();
-        repeat = true;
-        playerTurn = false;
-        pushStatus = false;
-        compTurn(compArr, playerArr);
-        repeat = false;
-        changeTurn;
-        changeTurnStatus(1);
+        // repeat = true;
+        // console.log("playerTurn",playerTurn);
+    
+        // console.log("playerTurn",playerTurn);
+        // pushStatus = false;
+        // compTurn(compArr, playerArr);
+        // pushStatus = true;
+        // console.log("playerTurn",playerTurn);
+       
+        // console.log("playerTurn",playerTurn);
+        // repeat = false;
+        // changeTurn;
+        // changeTurnStatus(1);
+    
     }
 }
 
