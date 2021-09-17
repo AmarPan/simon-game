@@ -7,10 +7,10 @@
 
 let compChoices = [];
 let playerChoices = [];
-let playerTurn = false;
-let pushStatus = false;
 let livesLeft;
-let wrongAnswer = false;
+let playerTurn;
+let pushStatus;
+let wrongAnswer;
 
 btnTry.addEventListener("click", function(){
     tryAgain(compChoices, playerChoices);
@@ -49,23 +49,27 @@ btnCheck.addEventListener("click",function(){
 
 // DONE
 function init(compArr, playerArr){
+    clearArray(compArr);
+    clearArray(playerArr);
     livesLeft = 3;
     playerTurn = false;
+    pushStatus = false;
+    wrongAnswer = false;
     document.querySelector("#left").innerHTML = livesLeft;
     clearStatus();
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
     
-    clearArray(compArr);
+    
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
 
-    clearArray(playerArr);
+   
 
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
-    refresh();
+    refreshCurrentSelection();
 
     compTurn(compArr, playerArr);
 }
@@ -98,6 +102,10 @@ function clickColor(shade, btnName, color, compArr, playerArr){
         console.log("compChoices:",compChoices);
         console.log("playerChoices:",playerChoices);
     }
+}
+
+function render(){
+    
 }
 
 // DONE
@@ -192,7 +200,7 @@ function nextLevel(compArr, playerArr){
     console.log("compChoices:",compChoices);
     console.log("playerChoices:",playerChoices);
     changeTurnStatus(0);
-    refresh();
+    refreshCurrentSelection();
     pushStatus = false;
     changeTurn()
     compTurn(compArr, playerArr)
@@ -209,7 +217,7 @@ function tryAgain(compArr, playerArr){
         console.log("compChoices:",compChoices)
         console.log("playerChoices:",playerChoices)
 
-        refresh();
+        refreshCurrentSelection();
     }
 }
 
@@ -249,7 +257,7 @@ function changeTurnStatus(status){
 }
 
 // DONE
-function refresh(){
+function refreshCurrentSelection(){
     document.querySelector("ol").remove();
     let ol = document.createElement("ol");
     let aside = document.querySelector("#selectionParent");
