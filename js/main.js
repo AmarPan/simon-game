@@ -11,6 +11,7 @@ let livesLeft;
 let playerTurn;
 let pushStatus;
 let wrongAnswer;
+let repeat;
 
 btnTry.addEventListener("click", function(){
     tryAgain(compChoices, playerChoices);
@@ -55,6 +56,7 @@ function init(compArr, playerArr){
     playerTurn = false;
     pushStatus = false;
     wrongAnswer = false;
+    repeat = false;
     document.querySelector("#left").innerHTML = livesLeft;
     clearStatus();
     console.log("compChoices:",compChoices);
@@ -135,9 +137,12 @@ function compTurn(compArr, playerArr){
         }
         delay = delay + 750;
     }
-    setTimeout(function(){
-        addCompChoice(compChoices, playerChoices)
-    },delay);
+    if(repeat === false){
+        setTimeout(function(){
+            addCompChoice(compChoices, playerChoices)
+        },delay);
+    }
+    
 }
 
 // DONE
@@ -218,6 +223,13 @@ function tryAgain(compArr, playerArr){
         console.log("playerChoices:",playerChoices)
 
         refreshCurrentSelection();
+        repeat = true;
+        playerTurn = false;
+        pushStatus = false;
+        compTurn(compArr, playerArr);
+        repeat = false;
+        changeTurn;
+        changeTurnStatus(1);
     }
 }
 

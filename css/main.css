@@ -15,7 +15,7 @@ body {
     height:100x;
     width: 1000px;
     display: grid;
-    grid-template-columns: .5fr .5fr 1.6fr .5fr .5fr;
+    grid-template-columns: .4fr .6fr 1.6fr .6fr .4fr;
     grid-template-rows: 2.5fr .3fr .3fr;
     text-align: center;
 }
