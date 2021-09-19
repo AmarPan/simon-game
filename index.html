@@ -19,16 +19,21 @@
 <body>
     <aside>
         <div>
-            <h2>Lives Left:</h2> <p id="left">3</p>
+            <p class="side-text">Lives Left:</p> <p id="left">3</p>
+            <p>High Score:</p> <p id="high-score">0</p>
         </div>
     </aside>
     
     <section>
-        <button type="button" id="btnTry" class="over">TRY AGAIN</button>
+        <!--<button type="button" id="btnRewatch" class="over">REWATCH COMPUTER SELECTION</button><br><br>
+        <button type="button" id="btnUndo" class="over">UNDO LAST SELECTION</button>
+        -->
+        <button type="button" id="btnTry" class="over">TRY AGAIN</button><br><br>
     </section>
 
     <header>
-        <h1>SIMON 2.0</h1>
+        <h1 id="simon">SIMON 2.0</h1>
+        <h2>Level <span id="level-num">1</span></h2>
         <div>
             <button type="button" id="btnPink" class="board" >PINK</button>
             <button type="button" id="btnGreen" class="board" >GREEN</button><br>
@@ -47,7 +52,7 @@
     </section>
 
     <aside id="selectionParent">
-        <h2>Current Selection:</h2>
+        <p class="side-text">Current Selection:<p>
         <ol id="selection">
         </ol>
     </aside>

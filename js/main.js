@@ -5,12 +5,21 @@
     Date: 9/16/21
 */
 
+/*
+To Do:
+1. Add rewatch computer selection feature.
+2. Add undo last selection feature.
+*/
+
 let compChoices = [];
 let playerChoices = [];
 let livesLeft;
 let playerTurn;
 let pushStatus;
 let wrongAnswer;
+let levelNum;
+let highTemp;
+let highScore = 0;
 
 btnTry.addEventListener("click", function(){
     tryAgain(compChoices, playerChoices);
@@ -44,10 +53,17 @@ btnCheck.addEventListener("click",function(){
     checkAnswer(compChoices, playerChoices);
 });
 
+//btnRewatch.addEventListener("click",)
+
+let levelEl = document.querySelector("#level-num");
+let highScoreEl = document.querySelector("#high-score");
 function init(compArr, playerArr){
+    highTemp = 0;
     clearArray(compArr);
     clearArray(playerArr);
     livesLeft = 3;
+    levelNum = 1;
+    levelEl.innerHTML = levelNum;
     playerTurn = false;
     pushStatus = false;
     wrongAnswer = false;
@@ -55,6 +71,7 @@ function init(compArr, playerArr){
     clearStatus();
     refreshCurrentSelection();
     compTurn(compArr, playerArr);
+    //render();
 }
 
 function clickColor(shade, btnName, color, compArr, playerArr){
@@ -103,6 +120,14 @@ function compTurn(compArr, playerArr){
     },delay);
 }
 
+function undoLastChoice(){
+
+}
+
+function rewatchCompSelection(){
+
+}
+
 function addCompChoice(compArr, playerArr){
     let next = genRandColor();
     pushStatus = true;
@@ -135,6 +160,14 @@ function checkAnswer(compArr, playerArr){
             document.querySelector("#status").style.color = "limegreen";
             document.querySelector("#status").innerHTML = "Correct! Click 'Next Level' to move on.";
             wrongAnswer = false;
+            highTemp = levelNum;
+            console.log("highTemp:",highTemp)
+            console.log("originalHighScore",highScore);
+            if(highTemp > highScore){
+                highScore = highTemp;
+                console.log("newhighScore:",highScore)
+            }
+            render();
             if(playerArr.length === 7)
             {
                 document.querySelector("#status").innerHTML = "You got 7 correct! You win!";
@@ -148,9 +181,20 @@ function nextLevel(compArr, playerArr){
     clearArray(playerArr);
     changeTurnStatus(0);
     refreshCurrentSelection();
+    levelNum++;
+    render();
+    console.log("Level:",levelNum);
     pushStatus = false;
     changeTurn()
     compTurn(compArr, playerArr)
+}
+
+// high score should equal level #. 
+// if high score is less than level #, high score = 
+// high score not reset durin init / restart 
+function render(){
+    levelEl.innerHTML = levelNum;
+    highScoreEl.innerHTML = highScore;
 }
 
 function tryAgain(compArr, playerArr){

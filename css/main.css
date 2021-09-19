@@ -9,10 +9,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size:x-large;
+}
+
 body {
     margin: 0;
+    font-size: 70%;
     height: 80vh;
-    width: 1000px;
+    width: 80vw;
     display: grid;
     grid-template-columns: .4fr .6fr 1.6fr .6fr .4fr;
     grid-template-rows: 2.5fr .3fr .3fr;
@@ -30,7 +35,7 @@ header h1{
 }
 
 header h2{
-    color:aqua;
+    color:hotpink;
 }
 
 section {
@@ -120,4 +125,22 @@ footer {
 
 aside h4 {
     margin-left: 20px;
+}
+
+.side-text {
+    font-size: 70%;
+}
+
+body button {
+    width: 90px;
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        width: 100vw;
+    }
+
+    #simon {
+        color: pink;
+    }
 }
