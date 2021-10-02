@@ -14,7 +14,7 @@ A player wins by getting to the 7th level and successfully matching a computer-g
 ![Player's Turn](/images/screenshotPlayersTurn.jpg)
 
 ## Technologies Used
-HTML, CSS, and Javascript ~~mixed with some blind luck.~~
+HTML, CSS, and Javascript
 
 ## Getting Started / How to Play
 
