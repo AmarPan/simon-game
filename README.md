@@ -1,4 +1,5 @@
 # SIMON 2.0 GAME by Amar Panjwani
+Link to game: https://amarpan.github.io/simon-game/
 ## Description
 This game is a recreation of the children's favorite and classic of the same name by Milton-Bradley. 
 
@@ -16,7 +17,6 @@ A player wins by getting to the 7th level and successfully matching a computer-g
 HTML, CSS, and Javascript ~~mixed with some blind luck.~~
 
 ## Getting Started / How to Play
-Link to game: https://amarpan.github.io/simon-game/
 
 1. Press the 'START' button.
 
