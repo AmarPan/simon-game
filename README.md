@@ -1,5 +1,5 @@
 # SIMON 2.0 GAME by Amar Panjwani
-Link to game: https://amarpan.github.io/simon-game/
+Link to play: https://amarpan.github.io/simon-game/
 ## Description
 This game is a recreation of the children's favorite and classic of the same name by Milton-Bradley. 
 
