@@ -13,11 +13,6 @@ A player wins by getting to the 7th level and successfully matching a computer-g
 Al
 
 ## Screenshots
-
-![Computer's Turn](/images/screenshotComputersTurn.jpg)
-![Player's Turn](/images/screenshotPlayersTurn.jpg)
-
-## Screenshots
 | Description | Screenshot |
 |------------ | ------------|
 | ERD | ![All Projects](main_app/static/images/ERD.jpg)
