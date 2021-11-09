@@ -46,10 +46,24 @@ Javascript | HTML | CSS | GitHub Pages (Deployment)
 
 
 ## Next Steps / Future Enhancements
+<details>
+<summary>Additional Features</summary>
+ 
 - Add a "Delete Last Selection" button
+ 
 - Add a "Replay Computer Selection" button
+ 
 - Add a "Clear Entire Selection" button
+ 
 - Add a replay of computer selection after clicking 'Try Again'
+ 
 - Add a fast mode
+ 
 - Add a hard mode with 8 colors instead of 4
+ 
 - Add a hard mode with faster computer selections
+
+</details>
+
+
+
