@@ -22,7 +22,7 @@ A player wins by getting to the 7th level and successfully matching a computer-g
 | Add a Note | ![All Projects](main_app/static/images/screenshots/note_add_screenshot.jpg)
 
 ## Technologies Used
-Javascript, HTML, CSS
+Javascript, HTML, CSS, GitHub Pages (Deployment)
 
 ## Getting Started
 
