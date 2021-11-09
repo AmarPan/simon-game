@@ -1,10 +1,10 @@
-Link to play:
- # <h1 align="center">SIMON 2.0 GAME</h1>
+
+# <h1 align="center">SIMON 2.0 GAME</h1>
  #### <h3 align="center">https://amarpan.github.io/simon-game</h3>
  <h5 align="center">by Amar Panjwani</h5>
  
 ## Description
-This game is a recreation of the children's favorite and classic of the same name by Milton-Bradley. 
+This game is a recreation of the 90s children's favorite and classic of the same name by Milton-Bradley. 
 
 The goal of the game is to press the colors in the exact same pattern and order as the computer, which gets longer and longer at each level.
 
@@ -12,17 +12,13 @@ The goal of the game is to press the colors in the exact same pattern and order 
 A player wins by getting to the 7th level and successfully matching a computer-generated combination of 7 colors. However, the player may play on indefinitely well beyond this level. 
 
 ## Screenshots
-| Description | Screenshot |
+| Screenshot | Description |
 |------------ | ------------|
-| ERD | ![All Projects](main_app/static/images/ERD.jpg)
-| Wireframes | ![All Projects](main_app/static/images/wireframes/all_wireframes.jpg)
-| Computer's Turn | ![All Projects](/images/screenshotComputersTurn.jpg)
-| Player's Turn | ![All Projects](/images/screenshotPlayersTurn.jpg)
-| Todo Details | ![All Projects](main_app/static/images/screenshots/todo_details_screenshot.jpg)
-| Add a Note | ![All Projects](main_app/static/images/screenshots/note_add_screenshot.jpg)
+| <h3 align="center">Computer's Turn</h3> | <img src="/images/screenshotComputersTurn.jpg" width="600">  
+| <h3 align="center">Player's Turn</h3> | <img src="/images/screenshotPlayersTurn.jpg" width="600"> 
 
 ## Technologies Used
-Javascript, HTML, CSS, GitHub Pages (Deployment)
+Javascript | HTML | CSS | GitHub Pages (Deployment)
 
 ## Getting Started
 
