@@ -10,7 +10,6 @@ The goal of the game is to press the colors in the exact same pattern and order 
 
 ## How to Win
 A player wins by getting to the 7th level and successfully matching a computer-generated combination of 7 colors. However, the player may play on indefinitely well beyond this level. 
-Al
 
 ## Screenshots
 | Description | Screenshot |
