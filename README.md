@@ -47,7 +47,7 @@ Javascript | HTML | CSS | GitHub Pages (Deployment)
 
 ## Next Steps / Future Enhancements
 <details>
-<summary>Additional Features</summary>
+<summary>Upcoming Features</summary>
  
 - Add a "Delete Last Selection" button
  
