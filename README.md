@@ -4,7 +4,7 @@
  <h5 align="center">by Amar Panjwani</h5>
  
 ## Description
-This game is a recreation of the 90s children's favorite and classic of the same name by Milton-Bradley. 
+This game is a recreation of the 90s memory game and classic of the same name by Milton-Bradley. 
 
 The goal of the game is to press the colors in the exact same pattern and order as the computer, which gets longer and longer at each level.
 
