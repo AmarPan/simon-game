@@ -1,7 +1,7 @@
 
 # <h1 align="center">SIMON 2.0 GAME</h1>
  #### <h3 align="center">https://amarpan.github.io/simon-game</h3>
- <h5 align="center">by Amar Panjwani</h5>
+ <h5 align="center">Amar Panjwani</h5>
  
 ## Description
 This game is a recreation of the 90s memory game and classic of the same name by Milton-Bradley. 
