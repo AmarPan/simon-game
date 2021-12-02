@@ -1,15 +1,16 @@
 
-# <h1 align="center">SIMON 2.0 GAME</h1>
+# <h1 align="center">SIMON 2.0 MEMORY GAME</h1>
  #### <h3 align="center">https://amarpan.github.io/simon-game</h3>
  <h5 align="center">Amar Panjwani</h5>
  
 ## Description
 This game is a recreation of the 90s memory game and classic of the same name by Milton-Bradley. 
 
-The goal of the game is to press the colors in the exact same pattern and order as the computer, which gets longer and longer at each level.
+The goal of the game is to press the colors in the exact same pattern and order as the computer, with the pattern getting longer and more confusing at each subsequent level.
+
 
 ## How to Win
-A player wins by getting to the 7th level and successfully matching a computer-generated combination of 7 colors. However, the player may play on indefinitely well beyond this level. 
+A player wins by completing the 7th level and successfully matching a computer-generated combination of 7 colors. However, the player may play on indefinitely well beyond this level. 
 
 ## Screenshots
 | Screenshot | Description |
@@ -37,9 +38,9 @@ Javascript | HTML | CSS | GitHub Pages (Deployment)
  
 6. If incorrect, press 'TRY AGAIN' to use a life, reinput your selection, and press 'CHECK ANSWER' again.
  
-7. When a player has 0 lives left and chooses incorrectly, a game over message is shown. 
+7. When a player has 0 lives left and chooses incorrectly, a 'GAME OVER' message is shown. 
  
-8. To start-over, press the 'START' button again. 
+8. To start-over with one color choice and 3 lives, press the 'START' button again. 
  
 </details>
 
