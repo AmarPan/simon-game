@@ -19,7 +19,7 @@ A player wins by completing the 7th level and successfully matching a computer-g
 | <h3 align="center">Player's Turn</h3> | <img src="/images/screenshotPlayersTurn.jpg" width="600"> 
 
 ## Technologies Used
-Javascript | HTML | CSS | GitHub Pages (Deployment)
+Javascript | HTML5 | CSS Flexbox & Grid | GitHub Pages (Deployment)
 
 ## Getting Started
 
