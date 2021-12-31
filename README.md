@@ -65,7 +65,7 @@ Javascript | HTML5 | CSS Flexbox & Grid | GitHub Pages (Deployment)
 
 
 
-## Next Steps
+## ⏭️ Next Steps
 <details>
 <summary>Upcoming Features</summary>
  
