@@ -1,5 +1,5 @@
 
-# <h1 align="center">:joystick: :video_game: SIMON 2.0 MEMORY GAME :video_game: :joystick:</h1>
+# <h1 align="center">:video_game: SIMON 2.0 MEMORY GAME :video_game:</h1>
  #### <h3 align="center">https://panamruth.github.io/simon-memory-game</h3>
  <h5 align="center">Pan Amar</h5>
 
