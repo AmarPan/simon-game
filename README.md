@@ -31,16 +31,16 @@ The goal of the game is to press the colors in the exact same pattern and order 
 ## :dart: How to Win
 A player wins by completing the 7th level and successfully matching a computer-generated combination of 7 colors. However, the player may play on indefinitely well beyond this level. 
 
-## Screenshots
+## :camera: Screenshots
 | Screenshot | Description |
 |------------ | ------------|
 | <h3 align="center">Computer's Turn</h3> | <img src="/images/screenshotComputersTurn.jpg" width="600">  
 | <h3 align="center">Player's Turn</h3> | <img src="/images/screenshotPlayersTurn.jpg" width="600"> 
 
-## Technologies Used
+## 💻 Technologies Used
 Javascript | HTML5 | CSS Flexbox & Grid | GitHub Pages (Deployment)
 
-## Getting Started
+## ⚛️ Getting Started
 
 <details>
 <summary>How to Play</summary>
@@ -65,7 +65,7 @@ Javascript | HTML5 | CSS Flexbox & Grid | GitHub Pages (Deployment)
 
 
 
-## Next Steps / Future Enhancements
+## Next Steps
 <details>
 <summary>Upcoming Features</summary>
  
