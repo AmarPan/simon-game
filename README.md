@@ -1,7 +1,7 @@
 
 # <h1 align="center">:joystick: :video_game: SIMON 2.0 MEMORY GAME :video_game: :joystick:</h1>
  #### <h3 align="center">https://panamruth.github.io/simon-memory-game</h3>
- <h5 align="center">Amar 'Pan' Panjwani</h5>
+ <h5 align="center">Pan Amar</h5>
  
 ## Description
 This game is a recreation of the 90s memory game and classic of the same name by Milton-Bradley. 
