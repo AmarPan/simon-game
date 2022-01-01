@@ -67,7 +67,7 @@ main {
 
 .board {
     border-radius: 50%;
-    height: 112px;
+    height: 125px;
     width: 125px;
     color: white;
     background-color: black;
@@ -135,11 +135,12 @@ body button {
 }
 
 #simon{
-    color: hotpink;
+    color: yellow;
     border-top: limegreen solid 5px;
     border-bottom: limegreen solid 5px;
-    border-left: limegreen solid 5px;
-    border-right: limegreen solid 5px;
+    background-color: limegreen;
+    /* border-left: limegreen solid 5px;
+    border-right: limegreen solid 5px; */
 }
 
 
