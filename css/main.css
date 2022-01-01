@@ -27,7 +27,6 @@ body {
 header {
     background-color:yellow;
     grid-column: span 1;
-    color: white;
 }
 
 header h1{
