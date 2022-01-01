@@ -147,7 +147,7 @@ function addCompChoice(compArr, playerArr) {
 function checkAnswer(compArr, playerArr) {
     for (let i = 0; i < compArr.length; i++) {
         if (compArr[i] !== playerArr[i] || compArr.length !== playerArr.length) {
-            document.querySelector("#status").style.color = "red";
+            document.querySelector("#status").style.color = "aqua";
             document.querySelector("#status").innerHTML = "Wrong answer! Click 'Try Again' to use another life.";
             wrongAnswer = true;
             if (wrongAnswer = true && livesLeft <= 0) {
