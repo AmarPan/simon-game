@@ -157,7 +157,7 @@ function checkAnswer(compArr, playerArr) {
             break;
         }
         else {
-            document.querySelector("#status").style.color = "limegreen";
+            document.querySelector("#status").style.color = "yellow";
             document.querySelector("#status").innerHTML = "Correct! Click 'Next Level' to move on.";
             wrongAnswer = false;
             highTemp = levelNum;
@@ -226,7 +226,7 @@ function changeTurnStatus(status) {
         document.querySelector("#turn").style.color = "red";
     } else if (status === 1) {
         document.querySelector("#turn").innerHTML = "PLAYER'S TURN"
-        document.querySelector("#turn").style.color = "limegreen";
+        document.querySelector("#turn").style.color = "yellow";
     }
 }
 
