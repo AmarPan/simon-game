@@ -71,7 +71,8 @@ main {
     width: 110px;
     color: white;
     background-color: black;
-    border-width:25px
+    border-width:25px;
+    font-size:x-small
 }
 
 #btnPink {
