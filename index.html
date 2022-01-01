@@ -7,66 +7,63 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Memory Game</title>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <aside>
-        <div>
-            <p class="side-text">Lives Left:</p>
-            <p id="left">3</p>
-            <p>High Score:</p>
-            <p id="high-score">0</p>
-        </div>
+      <div>
+        <p class="side-text">Lives Left:</p>
+        <p id="left">3</p>
+        <p>High Score:</p>
+        <p id="high-score">0</p>
+      </div>
     </aside>
 
     <section>
-        <!--<button type="button" id="btnRewatch" class="over">REWATCH COMPUTER SELECTION</button><br><br>
+      <!--<button type="button" id="btnRewatch" class="over">REWATCH COMPUTER SELECTION</button><br><br>
         <button type="button" id="btnUndo" class="over">UNDO LAST SELECTION</button>
         -->
-        <button type="button" id="btnTry" class="over">TRY AGAIN</button><br><br>
+      <button type="button" id="btnTry" class="over">TRY AGAIN</button
+      ><br /><br />
     </section>
 
     <header>
-        <h2 id="simon">SIMON 2.0</h2>
-        <h3 id="level">Level <span id="level-num">1</span></h3>
-        <div>
-            <button type="button" id="btnPink" class="board">PINK</button>
-            <button type="button" id="btnGreen" class="board">GREEN</button><br>
-            <button type="button" id="btnBlue" class="board">BLUE</button>
-            <button type="button" id="btnYellow" class="board">YELLOW</button>
-        </div>
-        <h3 id="turn">PRESS START</h3>
-        <button type="button" id="btnStart">START</button><br><br>
-        <button type="button" id="btnCheck">CHECK ANSWER</button><br><br>
-        <h3 id="status"></h3>
-        <h3 id="game-over"></h3>
+      <h2 id="simon">SIMON 2.0</h2>
+      <h3 class="black">Level <span id="level-num">1</span></h3>
+      <div>
+        <button type="button" id="btnPink" class="board">PINK</button>
+        <button type="button" id="btnGreen" class="board">GREEN</button><br />
+        <button type="button" id="btnBlue" class="board">BLUE</button>
+        <button type="button" id="btnYellow" class="board">YELLOW</button>
+      </div>
+      <h3 id="turn" class="black">PRESS START</h3>
+      <button type="button" id="btnStart">START</button><br /><br />
+      <button type="button" id="btnCheck">CHECK ANSWER</button><br /><br />
+      <h3 id="status"></h3>
+      <h3 id="game-over"></h3>
     </header>
 
     <section>
-        <button type="button" id="btnNext" class="over">NEXT LEVEL</button>
+      <button type="button" id="btnNext" class="over">NEXT LEVEL</button>
     </section>
 
     <aside id="selectionParent">
-        <p class="side-text">Current Selection:
-        <p>
-        <ol id="selection">
-        </ol>
+      <p class="side-text">Current Selection:</p>
+      <p></p>
+      <ol id="selection"></ol>
     </aside>
 
-    <footer>
+    <!-- <footer>
         <h4>Simon 2.0 made by Amar Panjwani</h4>
-    </footer>
+    </footer> -->
 
     <script defer src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
