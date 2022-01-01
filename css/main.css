@@ -135,7 +135,19 @@ body button {
     color: black;
 }
 
-@media only screen and (max-width: 768px){
+#aqua {
+    color:aqua;
+}
+
+#hotpink {
+    color: hotpink;
+}
+
+#yellow {
+    color:yellow;
+}
+
+/* @media only screen and (max-width: 768px){
     body {
         width: 100vw;
     }
@@ -143,4 +155,4 @@ body button {
     #simon {
         color: pink;
     }
-}
+} */
