@@ -162,6 +162,6 @@ body button {
 
 @media only screen and (max-width: 768px){
   .change {
-      font-size: small;
+      font-size: x-small;
   }
 }
