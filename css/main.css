@@ -67,8 +67,8 @@ main {
 
 .board {
     border-radius: 50%;
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     color: white;
     background-color: black;
     border-width:25px
