@@ -136,8 +136,10 @@ body button {
 
 #simon{
     color: hotpink;
-    border-top: aqua solid 5px;
-    border-bottom: aqua solid 5px;
+    border-top: limegreen solid 5px;
+    border-bottom: limegreen solid 5px;
+    border-left: limegreen solid 5px;
+    border-right: limegreen solid 5px;
 }
 
 
