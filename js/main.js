@@ -223,7 +223,7 @@ function changeTurn() {
 function changeTurnStatus(status) {
     if (status === 0) {
         document.querySelector("#turn").innerHTML = "COMPUTER'S TURN"
-        document.querySelector("#turn").style.color = "red";
+        document.querySelector("#turn").style.color = "aqua";
     } else if (status === 1) {
         document.querySelector("#turn").innerHTML = "PLAYER'S TURN"
         document.querySelector("#turn").style.color = "yellow";
