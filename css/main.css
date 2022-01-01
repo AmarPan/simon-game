@@ -60,11 +60,11 @@ main {
     grid-column: span 5;
 }
 
-footer {
+/* footer {
     background-color: limegreen;
     grid-column: span 5;
     
-}
+} */
 
 .board {
     border-radius: 50%;
