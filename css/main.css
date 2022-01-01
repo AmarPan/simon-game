@@ -19,7 +19,7 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: .4fr .4fr .8fr .4fr .4fr;
+    grid-template-columns: .4fr .4fr 1.2fr .4fr .4fr;
     /* grid-template-rows: 2.5fr .3fr; */
     text-align: center;
 }
@@ -134,17 +134,14 @@ body button {
     color: black;
 }
 
-#aqua {
-    color:aqua;
-}
-
-#hotpink {
+#simon{
     color: hotpink;
+    border-top: aqua solid 5px;
+    border-bottom: aqua solid 5px;
 }
 
-#yellow {
-    color:yellow;
-}
+
+
 
 /* @media only screen and (max-width: 768px){
     body {
