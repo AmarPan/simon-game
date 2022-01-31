@@ -1,7 +1,7 @@
 
 # <h1 align="center">:video_game: SIMON 2.0 MEMORY GAME :video_game:</h1>
  #### <h3 align="center">https://panamruth.github.io/simon-memory-game</h3>
- <h5 align="center">Pan Amruth Amar</h5>
+ <h5 align="center">Amar Panjwani</h5>
 
  <div align="center">
  <a href="https://panamruth.github.io/portfolio" target="_blank">
