@@ -3,7 +3,7 @@
  #### <h3 align="center">https://panamruth.github.io/simon-memory-game</h3>
  <h5 align="center">Amar Panjwani</h5>
 
-  <div align="center">
+ <div align="center">
  <a href="https://amarpan.github.io/portfolio" target="_blank">
     <img src="https://img.shields.io/badge/-amarpan.github.io/portfolio-gold?style=flat&logo=github">
  </a>
@@ -12,14 +12,17 @@
       <img src="https://img.shields.io/badge/-linkedin.com/in/amarpan-blue?style=flat&logo=Linkedin&logoColor=white">
  </a> 
     
+ 
+ <a href="https://medium.com/@amarpan">
+    <img src="https://img.shields.io/badge/-medium.com/@amarpan-purple?style=flat&logo=medium">
+ </a>
+ 
  <a href="mailto:amar.panjwani@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-amar.panjwani@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
  </a>
     
- <a href="https://medium.com/@amarpan">
-    <img src="https://img.shields.io/badge/-medium.com/@amarpan-black?style=flat&logo=medium">
- </a>
  </div>
+
 
 
  
