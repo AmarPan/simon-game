@@ -1,6 +1,6 @@
 
-# <h1 align="center">:video_game: SIMON MEMORY GAME :video_game:</h1>
- #### <h3 align="center">https://amarpan.github.io/simon-memory-game</h3>
+<h1 align="center">:video_game: SIMON MEMORY GAME :video_game:</h1>
+ <h3 align="center">https://amarpan.github.io/simon-memory-game</h3>
  
 
  <div align="center">
