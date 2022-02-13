@@ -57,21 +57,21 @@ A player wins by completing the 7th level and successfully matching a computer-g
 <details>
 <summary>How to Play</summary>
  
-1. Press the 'START' button.
+:one: Press the 'START' button.
  
-2. The computer will choose its first color. Pay attention or you might miss it!
+2️⃣ The computer will choose its first color. Pay attention or you might miss it!
  
-3. Choose the same pattern as the computer by clicking directly on the appropriate circles. Your selection will appear as steps in the right corner for your reference.
+:three: Choose the same pattern as the computer by clicking directly on the appropriate circles. Your selection will appear as steps in the right corner for your reference.
  
-4. When finished, press 'CHECK ANSWER' to see if your selection was correct or not. A corresponding status message will appear. 
+:four: When finished, press 'CHECK ANSWER' to see if your selection was correct or not. A corresponding status message will appear. 
  
-5. If correct, press 'NEXT LEVEL', and the process will repeat, but with another added color this time.
+:five:  If correct, press 'NEXT LEVEL', and the process will repeat, but with another added color this time.
  
-6. If incorrect, press 'TRY AGAIN' to use a life, reinput your selection, and press 'CHECK ANSWER' again.
+:six:  If incorrect, press 'TRY AGAIN' to use a life, reinput your selection, and press 'CHECK ANSWER' again.
  
-7. When a player has 0 lives left and chooses incorrectly, a 'GAME OVER' message is shown. 
+:seven:  When a player has 0 lives left and chooses incorrectly, a 'GAME OVER' message is shown. 
  
-8. To start-over with one color choice and 3 lives, press the 'START' button again. 
+:eight:  To start-over with one color choice and 3 lives, press the 'START' button again. 
  
 </details>
 
