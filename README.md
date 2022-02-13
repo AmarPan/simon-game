@@ -4,7 +4,7 @@
  
 
  <div align="center">
- <a href="https://amarpan.github.io/portfolio" target="_blank">
+ <a hreqf="https://amarpan.github.io/portfolio" target="_blank">
     <img src="https://img.shields.io/badge/-amarpan.github.io/portfolio-gold?style=flat&logo=github">
  </a>
     
@@ -17,8 +17,8 @@
     <img src="https://img.shields.io/badge/-medium.com/@amarpan-purple?style=flat&logo=medium">
  </a>
  
- <a href="mailto:amar.panjwani@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/-amar.panjwani@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
+ <a href="mailto:amarpan.us@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-amarpan.us@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
  </a>
  <h6 align="center">
    <a href="https://www.linkedin.com/in/amarpan/">Amar Panjwani
