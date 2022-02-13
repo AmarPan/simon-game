@@ -1,7 +1,6 @@
 
 <h1 align="center">:video_game: SIMON MEMORY GAME :video_game:</h1>
- <h3 align="center">https://amarpan.github.io/simon-memory-game</h3>
- 
+
 
  <div align="center">
  <a hreqf="https://amarpan.github.io/portfolio" target="_blank">
@@ -20,6 +19,10 @@
  <a href="mailto:amarpan.us@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/-amarpan.us@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white">
  </a>
+
+ <h3 align="center">https://amarpan.github.io/simon-memory-game</h3>
+ 
+
  <h6 align="center">
    <a href="https://www.linkedin.com/in/amarpan/">Amar Panjwani
       </a><br></a>
