@@ -83,8 +83,7 @@ A player wins by completing the 7th level and successfully matching a computer-g
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 ## :fire: Getting Started
 
-<details>
-<summary>How to Play</summary>
+### How to Play
  
 :one: Press the 'START' button.
  
