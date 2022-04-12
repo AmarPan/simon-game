@@ -1,7 +1,7 @@
 
 <h1 align="center">:video_game: SIMON MEMORY GAME :video_game:</h1>
 
- <h3 align="center">https://amarpan.github.io/simon-memory-game</h3>
+ <h3 align="center"><a href="https://amarpan.github.io/simon-memory-game">CLICK TO PLAY</a></h3>
  
 
 
