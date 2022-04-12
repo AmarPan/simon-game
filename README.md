@@ -107,22 +107,24 @@ A player wins by completing the 7th level and successfully matching a computer-g
 
 
 ## ⏭️ Next Steps
-<details>
-<summary>Upcoming Features</summary>
+
+### Upcoming Features
+
+- [ ] Add different sounds for each color click
  
-- Add a "Delete Last Selection" button
+- [ ] Add a "Delete Last Selection" button
  
-- Add a "Replay Computer Selection" button
+- [ ] Add a "Replay Computer Selection" button
  
-- Add a "Clear Entire Selection" button
+- [ ] Add a "Clear Entire Selection" button
  
-- Add a replay of computer selection after clicking 'Try Again'
+- [ ] Add a replay of computer selection after clicking 'Try Again'
  
-- Add a fast mode
+- [ ] Add a fast mode
  
-- Add a hard mode with 8 colors instead of 4
+- [ ] Add a hard mode with 8 colors instead of 4
  
-- Add a hard mode with faster computer selections
+- [ ] Add a hard mode with faster computer selections
 
 </details>
 
