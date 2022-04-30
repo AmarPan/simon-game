@@ -49,10 +49,10 @@
 
 
 
- <h6 align="center">
-   <a href="https://www.linkedin.com/in/amarpan/">Amar Pan, M.Ed.
+ <h3 align="center">
+   Created by <a href="https://www.linkedin.com/in/amarpan/">Professor Pan, M.Ed.
       </a><br></a>
- </h6>
+ </h3>
  
  
     
