@@ -51,8 +51,10 @@ A player wins by completing the 7th level and successfully matching a computer-g
 | <h3 align="center">Player's Turn</h3> | <img src="/images/screenshotPlayersTurn.jpg" width="600"> 
 
 ## 💻 Technologies Used
-![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)  ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3) ![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
+![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)  
+![CSS3](https://img.shields.io/badge/-CSS_Flexbox_&_Grid-333?style=flat&logo=css3) 
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 ## :fire: Getting Started
