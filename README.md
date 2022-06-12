@@ -46,9 +46,9 @@ A player wins by completing the 7th level and successfully matching a computer-g
 
 ## :camera: Screenshots
 | Screenshot | Description |
-|------------ | ------------|
-| <h3 align="center">Computer's Turn</h3> | <img src="/images/screenshotComputersTurn.jpg" width="600">  
-| <h3 align="center">Player's Turn</h3> | <img src="/images/screenshotPlayersTurn.jpg" width="600"> 
+|:------------:|:------------:|
+|**Computer's Turn**| <img src="/images/screenshotComputersTurn.jpg" width="600">  
+|**Player's Turn**| <img src="/images/screenshotPlayersTurn.jpg" width="600"> 
 
 ## 💻 Technologies Used
  
