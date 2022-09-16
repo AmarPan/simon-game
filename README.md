@@ -1,7 +1,7 @@
 
 <h1 align="center">:video_game: SIMON MEMORY GAME :video_game:</h1>
 
- <h3 align="center"><a href="https://profpan396.github.io/simon-memory-game">CLICK HERE TO PLAY</a></h3>
+ <h3 align="center"><a href="https://profpan396.github.io/simon-memory-game">CLICK TO PLAY</a></h3>
  
 
 
