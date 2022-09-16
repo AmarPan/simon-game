@@ -6,7 +6,7 @@
 
 
   <h3 align="center" id="author">
-   Created by <a href="https://www.linkedin.com/in/profpan396/">Amar Pan, M.Ed.</a><br> 
+   Created by <a href="https://www.linkedin.com/in/profpan396/">Amar Pan, M.Ed.</a><br><br>
    <div align="center">
 <a href="https://profpan396.github.io" target="_blank">
         <img
