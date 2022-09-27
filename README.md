@@ -40,11 +40,10 @@
 ## 📝 Description
 This game is a recreation of the 90s memory game and classic of the same name by Milton-Bradley. 
 
-The goal of the game is to press the colors in the exact same pattern and order as the computer, with the pattern getting longer and more confusing at each subsequent level.
-
-
 ## :dart: How to Win
-A player wins by completing the 7th level and successfully matching a computer-generated combination of 7 colors. However, the player may play on indefinitely well beyond this level. 
+The goal of the game is to press the colors in the exact same pattern and order as the computer, with the pattern getting longer and more confusing at each subsequent level. 
+
+A player wins by completing `Level 7` and successfully matching a computer-generated combination of 7 colors. However, the player may choose to play on indefinitely well beyond this level. 
 
 ## :camera: Screenshots
 | Screenshot | Description |
