@@ -2,7 +2,10 @@
    <img width="502" alt="banner simon" src="https://user-images.githubusercontent.com/101842750/162448581-4f688418-9c51-43e6-b607-9745eb86cb53.png">
    </h1>
 </div>
-<h1 align="center">:video_game: SIMON MEMORY GAME :video_game:</h1>
+<div align="center">
+   
+# SIMON MEMORY GAME <br> 🎮 🕹️ 🎮
+</div>
 
  <h3 align="center"><a href="https://profpan396.github.io/simon-memory-game">CLICK TO PLAY</a></h3>
  
