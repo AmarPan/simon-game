@@ -56,7 +56,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 
 ## 💻 Technologies Used
  
-![CSS3](https://img.shields.io/badge/-CSS_Flexbox_&_Grid-05122A?style=flat&logo=css3) 
+![CSS3](https://img.shields.io/badge/-CSS_Grid-05122A?style=flat&logo=css3) 
 ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)  
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
