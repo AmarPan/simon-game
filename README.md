@@ -4,7 +4,7 @@
 </div>
 <div align="center">
    
-# SIMON MEMORY GAME <br> 🎮 🕹️ 🎮
+# SIMON MEMORY GAME
 </div>
 
  <h3 align="center"><a href="https://profpan396.github.io/simon-memory-game">CLICK TO PLAY</a></h3>
