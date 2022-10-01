@@ -1,44 +1,33 @@
-<div align="center">
+<div align="center" id="banner">
    <img width="502" alt="banner simon" src="https://user-images.githubusercontent.com/101842750/162448581-4f688418-9c51-43e6-b607-9745eb86cb53.png">
    </h1>
 </div>
-<div align="center">
+
+<div align="center" id="header">
    
 # SIMON MEMORY GAME
+### [CLICK TO PLAY](https://profpan396.github.io/simon-memory-game)
+**Created by [Amar Pan, M.Ed.](https://www.linkedin.com/in/profpan396/)** 
+     
 </div>
-
- <h3 align="center"><a href="https://profpan396.github.io/simon-memory-game">CLICK TO PLAY</a></h3>
- 
-
-
-  <h3 align="center" id="author">
-   Created by <a href="https://www.linkedin.com/in/profpan396/">Amar Pan, M.Ed.</a><br><br>
-   <div align="center">
-<a href="https://profpan396.github.io" target="_blank">
-        <img
-          src="https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=Blackberry&logoColor=black">
-      </a>
-      <br>
-
- <a href="https://www.github.com/profpan396/" target="_blank">
-        <img
-          src="https://img.shields.io/badge/-@profpan396-junglegreen?style=flat&logo=GitHub&logoColor=black">
-      </a>
- <a href="https://twitter.com/profpan396" target="_blank">
-  <img src="https://img.shields.io/badge/-@profpan396-skyblue?style=flat&logo=Twitter&logoColor=black">
-</a>
-
- <a href="https://www.linkedin.com/in/profpan396/" target="_blank">
-      <img src="https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black">
- </a> 
- 
- ![](https://visitor-badge.glitch.me/badge?page_id=profpan396.simon-memory-game)
   
+<div align="center" id="socialbuttons">
 
+  [![Portfolio Badge](https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=Blackberry&logoColor=black)](https://profpan396.github.io)
 
- </h3>
- 
- </div>
+  [![GitHub Badge](https://img.shields.io/badge/-@profpan396-junglegreen?style=flat&logo=GitHub&logoColor=black)](https://www.github.com/profpan396/)
+  [![Twitter Badge](https://img.shields.io/badge/-@profpan396-skyblue?style=flat&logo=Twitter&logoColor=black)](https://twitter.com/profpan396)
+  [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
+  <br>
+  ![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=amarpan.readme-writing-tutorial)
+  ![Last Commit](https://img.shields.io/github/last-commit/profpan396/how-to-write-a-GA-SEI-README)
+  ![Stars](https://img.shields.io/github/stars/profpan396/how-to-write-a-GA-SEI-README)
+  <br>
+  ![Version](https://img.shields.io/badge/version-1.7-lightblue)
+
+  #### ***If you find this tutorial helpful, please consider giving it a :star:
+
+</div>
  
 ## 📝 Description
 This game is a recreation of the 90s memory game and classic of the same name by Milton-Bradley. 
