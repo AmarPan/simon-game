@@ -23,7 +23,7 @@
   ![Last Commit](https://img.shields.io/github/last-commit/profpan396/simon-memory-game)
   ![Stars](https://img.shields.io/github/stars/profpan396/simon-memory-game)
   <br>
-  ![Version](https://img.shields.io/badge/version-1.0-black)
+  ![Version](https://img.shields.io/badge/version-2.0-gold)
 
 </div>
  
