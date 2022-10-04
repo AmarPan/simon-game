@@ -28,7 +28,7 @@
 </div>
  
 ## 📝 Description
-This game is a recreation of the 90s memory game and classic of the same name by Milton-Bradley. 
+This game is a recreation of the 90s me short-termmory game and classic of the same name by Milton-Bradley. 
 
 ## :dart: How to Win
 The goal of the game is to press the colors in the exact same pattern and order as the computer, with the pattern getting longer and more confusing at each subsequent level. 
