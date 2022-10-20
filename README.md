@@ -17,9 +17,9 @@
   <br>
   [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
   <br>
+  ![Stars](https://img.shields.io/github/stars/profpan396/simon-memory-game?style=social)
   ![](https://visitor-badge.laobi.icu/badge?page_id=profpan396.simon-memory-game)
-  ![Last Commit](https://img.shields.io/github/last-commit/profpan396/simon-memory-game)
-  ![Stars](https://img.shields.io/github/stars/profpan396/simon-memory-game)
+  ![Forks](https://img.shields.io/github/forks/profpan396/simon-memory-game?style=social)
   <br>
   ![Version](https://img.shields.io/badge/version-2.0-gold)
 
