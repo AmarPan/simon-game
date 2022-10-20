@@ -66,9 +66,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 </details>
 
-
-
-## ⏭️ Next Steps
+## ⏭️ Upcoming Features
 
 ### Upcoming Features
 
