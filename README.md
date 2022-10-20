@@ -52,7 +52,9 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 
 ### How to Play
 
-<details open>
+<details>
+<summary>Instructions</summary>
+
 1. Press the `START` button.
 2. The computer will choose its first color. Pay attention or you might miss it!
 3. Choose the same pattern as the computer by clicking directly on the appropriate circles. Your selection will appear as steps in the right corner for your reference.
