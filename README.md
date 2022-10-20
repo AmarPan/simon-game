@@ -57,8 +57,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 3. Choose the same pattern as the computer by clicking directly on the appropriate circles. Your selection will appear as steps in the right corner for your reference.
 4. When finished, press `CHECK ANSWER` to see if your selection was correct or not. A corresponding status message will appear. 
 5. If correct, press `NEXT LEVEL`, and the process will repeat, but with another added color this time.
- 
-:six:  If incorrect, press `TRY AGAIN` to use a life, reinput your selection, and press `CHECK ANSWER` again.
+6. If incorrect, press `TRY AGAIN` to use a life, reinput your selection, and press `CHECK ANSWER` again.
  
 :seven:  When a player has 0 lives left and chooses incorrectly, a `GAME OVER` message is shown. 
  
