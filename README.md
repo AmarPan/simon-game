@@ -7,7 +7,7 @@
    
 # SIMON MEMORY GAME
 ### [CLICK TO PLAY](https://profpan396.github.io/simon-memory-game)
-**Created by [Amar Pan, M.Ed.](https://www.linkedin.com/in/profpan396/)** 
+**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)** 
      
 </div>
   
