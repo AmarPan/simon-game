@@ -70,7 +70,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 
 - [:x:] Corresponding sounds for each color
  
-- [:x:] Add a "Delete Last Selection" button
+- [:x:] `Delete Last Selection` button
  
 - [:x:] Add a "Replay Computer Selection" button
  
