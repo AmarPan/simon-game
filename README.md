@@ -66,7 +66,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 </details>
 
-## ⏭️ Upcoming Features
+## :satellite: Upcoming Features
 
 - [:x:] Corresponding sounds for each color
  
