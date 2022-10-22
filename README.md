@@ -82,8 +82,6 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 - [:x:] Intense 8 color mode
  
-- [:x:] Add a hard mode with faster computer selections
-
 </details>
 
 
