@@ -31,7 +31,7 @@ This game is a recreation of the 90s short-term memory game and classic of the s
 ## :dart: How to Win
 The goal of the game is to press the colors in the exact same pattern and order as the computer, with the pattern getting longer and more confusing at each subsequent level. 
 
-A player wins by completing `Level 7` and successfully matching a computer-generated combination of 7 colors. However, the player may choose to play on indefinitely well beyond this level. 
+A player wins by completing `Level 7` and successfully matching a computer-generated combination of 7 colors. However, the player may choose to play on indefinitely well beyond this level (Current High Score = Lvl 22). 
 
 ## :camera_flash: Screenshots
 | Screenshot | Description |
