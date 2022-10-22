@@ -5,8 +5,9 @@
 <div align="center" id="header">
    
 # SIMON
+**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)**
 ### [CLICK TO PLAY](https://profpan396.github.io/simon-memory-game)
-[Amar Pan](https://www.linkedin.com/in/profpan396/)
+
      
 </div>
   
