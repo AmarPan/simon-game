@@ -62,7 +62,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 5. If correct, press `NEXT LEVEL`, and the process will repeat, but with another added color this time.
 6. If incorrect, press `TRY AGAIN` to use a life, reinput your selection, and press `CHECK ANSWER` again.
 7. When a player has 0 lives left and chooses incorrectly, a `GAME OVER` message is shown. 
-8. To start-over with one color choice and 3 lives, press the `START` button again. 
+8. To start over with one color choice and 3 lives, press the `START` button again. 
  
 </details>
 
