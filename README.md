@@ -52,7 +52,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 
 ### How to Play
 
-<details>
+<details open>
 <summary>Instructions</summary>
 
 1. Press the `START` button.
