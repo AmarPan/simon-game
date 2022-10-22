@@ -68,7 +68,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 
 ## ⏭️ Upcoming Features
 
-- [ ] Add different sounds for each color click
+- [:x:] Add different sounds for each color click
  
 - [ ] Add a "Delete Last Selection" button
  
