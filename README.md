@@ -76,7 +76,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 - [:x:] Add a "Clear Entire Selection" button
  
-- [ ] Add a replay of computer selection after clicking 'Try Again'
+- [:x:] Add a replay of computer selection after clicking 'Try Again'
  
 - [ ] Add a fast mode
  
