@@ -4,7 +4,7 @@
 
 <div align="center" id="header">
    
-# SIMON MEMORY GAME
+# SIMON
 ### [CLICK TO PLAY](https://profpan396.github.io/simon-memory-game)
 [Amar Pan](https://www.linkedin.com/in/profpan396/)
      
