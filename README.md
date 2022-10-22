@@ -26,7 +26,7 @@
 </div>
  
 ## 📝 Description
-A short-term memory game with the goal being to press the colors in the exact same pattern and order as the computer, with the pattern getting longer and more confusing at each subsequent level. 
+A short-term memory game where the player must press the colors in the exact same pattern and order as the computer, with the pattern getting longer and more confusing at each subsequent level. 
 
 ## :dart: How to Win 
 A player wins by completing `Level 7` and successfully matching a computer-generated combination of 7 colors. However, the player may choose to play on indefinitely well beyond this level (Current High Score = Lvl 22). 
