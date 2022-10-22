@@ -72,7 +72,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 - [:x:] `Delete Last Selection` button
  
-- [:x:] Add a "Replay Computer Selection" button
+- [:x:] `Replay Computer Selection` button
  
 - [:x:] Add a "Clear Entire Selection" button
  
