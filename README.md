@@ -1,13 +1,12 @@
 <div align="center" id="banner">
    <img width="502" alt="banner simon" src="https://user-images.githubusercontent.com/101842750/162448581-4f688418-9c51-43e6-b607-9745eb86cb53.png">
-   </h1>
 </div>
 
 <div align="center" id="header">
    
 # SIMON MEMORY GAME
 ### [CLICK TO PLAY](https://profpan396.github.io/simon-memory-game)
-**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)** 
+[Amar Pan](https://www.linkedin.com/in/profpan396/)
      
 </div>
   
