@@ -78,7 +78,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 - [:x:] Add a replay of computer selection after clicking 'Try Again'
  
-- [ ] Add a fast mode
+- [:x:] Add a fast mode
  
 - [ ] Add a hard mode with 8 colors instead of 4
  
