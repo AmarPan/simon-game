@@ -38,10 +38,9 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 |**Player's Turn**| <img src="/images/screenshotPlayersTurn.jpg" width="600"> 
 
 ## 💻 Technologies Used
- 
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
 ![CSS3](https://img.shields.io/badge/-CSS_Grid-05122A?style=flat&logo=css3) 
-![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
-![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)  
+![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)  
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
 ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
