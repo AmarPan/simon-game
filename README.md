@@ -50,8 +50,6 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 
 ## :fire: Getting Started
 
-### How to Play
-
 <details open>
 <summary> Instructions </summary>
 
