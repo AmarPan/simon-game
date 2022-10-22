@@ -53,7 +53,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
 ### How to Play
 
 <details open>
-<summary>Instructions</summary>
+<summary> Instructions </summary>
 
 1. Press the `START` button.
 2. The computer will choose its first color. Pay attention or you might miss it!
