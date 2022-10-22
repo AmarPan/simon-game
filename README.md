@@ -80,7 +80,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 - [:x:] Hyper fast mode
  
-- [:x:] Add a hard mode with 8 colors instead of 4
+- [:x:] Intense 8 color mode
  
 - [:x:] Add a hard mode with faster computer selections
 
