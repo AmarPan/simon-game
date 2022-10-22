@@ -33,7 +33,7 @@ The goal of the game is to press the colors in the exact same pattern and order 
 
 A player wins by completing `Level 7` and successfully matching a computer-generated combination of 7 colors. However, the player may choose to play on indefinitely well beyond this level. 
 
-## :camera: Screenshots
+## :camera_flash: Screenshots
 | Screenshot | Description |
 |:------------:|:------------:|
 |**Computer's Turn**| <img src="/images/screenshotComputersTurn.jpg" width="600">  
