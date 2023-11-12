@@ -5,21 +5,21 @@
 <div align="center" id="header">
    
 # SIMON
-**Created by [Amar Pan](https://www.linkedin.com/in/profpan396/)**
-### [CLICK TO PLAY](https://profpan396.github.io/simon-memory-game)
+**Created by [Amar Panjwani](https://www.linkedin.com/in/amarpan/)**
+### [CLICK TO PLAY](https://amarpan.github.io/simon-memory-game)
 
      
 </div>
   
 <div align="center" id="socialbuttons">
 
-  [![Portfolio Badge](https://img.shields.io/badge/-profpan396.github.io-magenta?style=flat&logo=)](https://profpan396.github.io)
+  [![Portfolio Badge](https://img.shields.io/badge/-amarpan.github.io-magenta?style=flat&logo=)](https://amarpan.github.io)
   <br>
-  [![LinkedIn Badge](https://img.shields.io/badge/-@profpan396-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/profpan396/)
+  [![LinkedIn Badge](https://img.shields.io/badge/-@amarpan-blue?style=flat&logo=Linkedin&logoColor=black)](https://www.linkedin.com/in/amarpan/)
   <br>
-  ![Stars](https://img.shields.io/github/stars/profpan396/simon-memory-game?style=social)
-  ![](https://visitor-badge.laobi.icu/badge?page_id=profpan396.simon-memory-game)
-  ![Forks](https://img.shields.io/github/forks/profpan396/simon-memory-game?style=social)
+  ![Stars](https://img.shields.io/github/stars/amarpan/simon-memory-game?style=social)
+  ![](https://visitor-badge.laobi.icu/badge?page_id=amarpan.simon-memory-game)
+  ![Forks](https://img.shields.io/github/forks/amarpan/simon-memory-game?style=social)
   <br>
   ![Version](https://img.shields.io/badge/version-2.0-gold)
 
@@ -75,7 +75,7 @@ A player wins by completing `Level 7` and successfully matching a computer-gener
  
 - [:x:] Hyper fast mode
  
-- [:x:] Intense 8 color mode
+- [:x:] Intense 8-color mode
  
 </details>
 
